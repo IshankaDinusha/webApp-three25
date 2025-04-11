@@ -1,0 +1,124 @@
+:root {
+    --primary-dark: #0C1426;
+    --secondary-dark: #1A2234;
+    --accent-dark: #323C51;
+    --primary-yellow: #E0C422;
+    --primary-blue: #1368F5;
+    --secondary-blue: #487B99;
+    --accent-blue: #4BB8FF;
+    --primary-white: #E3EEF5;
+    --primary-black: #060A14;
+
+}
+
+.btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn-dark {
+    background-color: var(--primary-black);
+    border-color: var(--primary-black);
+    color: var(--primary-white);
+}
+
+.btn-warning {
+    border-color: var(--primary-yellow);
+    background-color: var(--primary-yellow);
+    color: var(--primary-black);
+}
+
+.btn-outline-warning {
+    border-color: var(--primary-yellow);
+    color: var(--primary-yellow);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+    color: var(--primary-black);
+}
+
+.btn-outline-light {
+    border-color: var(--primary-white);
+    color: var(--primary-white);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-white);
+    border-color: var(--primary-white);
+    color: var(--primary-black);
+}
+
+.btn-outline-dark {
+    border-color: var(--primary-black);
+    color: var(--primary-black);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-black);
+    border-color: var(--primary-dark);
+    color: var(--primary-white);
+}
+
+.btn-primary {
+    border-color: var(--primary-blue);
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+
+.btn-accent-dark {
+    border-color: var(--accent-dark);
+    background-color: var(--accent-dark);
+    color: var(--primary-white);
+}
+
+.nav-search {
+    background-color: var(--accent-dark);
+    color: var(--primary-white);
+}
+
+.nav-search::placeholder {
+    color: var(--primary-white);
+}
+
+.nav-search:focus {
+    background-color: var(--accent-dark);
+    color: var(--primary-white);
+}
+
+.bg-primary-dark {
+    background-color: var(--primary-dark);
+}
+
+.bg-secondary-dark {
+    background-color: var(--secondary-dark);
+}
+
+.bg-accent-blue {
+    background-color: var(--accent-blue);
+}
+
+.bg-accent-dark {
+    background-color: var(--accent-dark);
+}
+
+.nav-link {
+    color: var(--primary-dark);
+}
+
+.text-warning {
+    color: var(--primary-yellow);
+}
+
+.text-white {
+    color: var(--primary-white);
+}
+
+.text-accent-blue {
+    color: var(--accent-blue);
+}
+
+.link-light {
+    color: var(--primary-white);
+}

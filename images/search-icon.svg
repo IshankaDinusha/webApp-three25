@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115" width="115" height="115">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: none;stroke: #4bb8ff;stroke-linejoin: round;stroke-width: 10 } 
+		.s1 { fill: none;stroke: #4bb8ff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10 } 
+	</style>
+	<g id="Folder 1">
+		<path class="s0" d="m52.3 99c25.8 0 46.7-20.9 46.7-46.8 0-25.8-20.9-46.7-46.8-46.7-25.8 0-46.7 20.9-46.7 46.7 0 25.9 20.9 46.8 46.8 46.8z"/>
+		<path class="s1" d="m67.8 33.9c-2-2-4.5-3.6-7.1-4.7-2.7-1.1-5.6-1.7-8.4-1.7-2.9 0-5.8 0.6-8.5 1.7-2.6 1.1-5.1 2.7-7.1 4.7m49.2 52l23.3 23.3"/>
+	</g>
+</svg>
