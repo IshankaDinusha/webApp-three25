@@ -3,17 +3,22 @@
     --secondary-dark: #1A2234;
     --accent-dark: #323C51;
     --primary-yellow: #E0C422;
+    --secondary-yellow: #f9e2af;
     --primary-blue: #1368F5;
     --secondary-blue: #487B99;
     --accent-blue: #4BB8FF;
+    --dark-blue: #1D6FA4;
     --primary-white: #E3EEF5;
     --primary-black: #060A14;
+    --primary-green: #a6e3a1;
 
 }
 
 .btn {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-weight: 600;
+    border-width: 1.5px;
 }
 
 .btn-dark {
@@ -73,6 +78,19 @@
     color: var(--primary-white);
 }
 
+.btn-accent-blue {
+    border-color: var(--accent-blue);
+    background-color: var(--accent-blue);
+    color: var(--primary-dark);
+}
+
+.btn-accent-blue:hover {
+    border-color: var(--accent-blue);
+    background-color: var(--accent-blue);
+    color: var(--primary-dark);
+    opacity: 0.8;
+}
+
 .nav-search {
     background-color: var(--accent-dark);
     color: var(--primary-white);
@@ -119,6 +137,256 @@
     color: var(--accent-blue);
 }
 
+.text-secondary-dark {
+    color: var(--secondary-dark);
+}
+
+.text-accent-dark {
+    color: var(--accent-dark);
+}
+
 .link-light {
     color: var(--primary-white);
+}
+
+.link-accent-blue {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.link-accent-blue:hover {
+    opacity: 0.8;
+}
+
+.line-limit-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+.bg-card-blue {
+
+    background-image: linear-gradient(var(--primary-yellow), var(--accent-blue));
+
+    .card-body {
+
+        .card-title {
+            color: var(--primary-white);
+        }
+
+        .card-text {
+            font-weight: 600;
+            font-size: small;
+            color: var(--accent-dark);
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    color: var(--primary-dark);
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    color: var(--accent-dark);
+                }
+
+                i:nth-of-type(2) {
+                    color: var(--accent-dark);
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--accent-dark);
+                }
+            }
+        }
+    }
+}
+
+.bg-card-dark-blue {
+
+    background-color: var(--dark-blue);
+
+    .card-body {
+
+        .card-title {
+            color: var(--primary-white);
+        }
+
+        .card-text {
+            font-weight: 600;
+            font-size: small;
+            color: var(--secondary-dark);
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    color: var(--primary-white);
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    color: var(--secondary-yellow);
+                }
+
+                i:nth-of-type(2) {
+                    color: var(--primary-green);
+                }
+
+                span:nth-of-type(1) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--secondary-yellow);
+                }
+
+                span:nth-of-type(2) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--primary-green);
+                }
+            }
+        }
+    }
+}
+
+.bg-card-dark-mix {
+
+    background-image: linear-gradient(var(--dark-blue) 80%, var(--accent-blue));
+
+    .card-body {
+
+        .card-title {
+            color: var(--primary-white);
+        }
+
+        .card-text {
+            font-weight: 600;
+            font-size: small;
+            color: var(--secondary-dark);
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    color: var(--primary-white);
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    color: var(--secondary-yellow);
+                }
+
+                i:nth-of-type(2) {
+                    color: var(--primary-green);
+                }
+
+                span:nth-of-type(1) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--secondary-yellow);
+                }
+
+                span:nth-of-type(2) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--primary-green);
+                }
+            }
+        }
+    }
+}
+
+.bg-card-dark-mix-mono {
+
+    background-image: linear-gradient(var(--dark-blue) 80%, var(--accent-blue));
+
+    .card-body {
+
+        .card-title {
+            color: var(--primary-white);
+        }
+
+        .card-text {
+            font-weight: 600;
+            font-size: small;
+            color: var(--secondary-dark);
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    color: var(--primary-dark);
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    color: var(--accent-dark);
+                }
+
+                i:nth-of-type(2) {
+                    color: var(--accent-dark);
+                }
+
+                span:nth-of-type(1) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--accent-dark);
+                }
+
+                span:nth-of-type(2) {
+                    font-weight: 600;
+                    font-size: small;
+                    color: var(--accent-dark);
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: var(--primary-dark);
+    border-color: var(--accent-blue);
+    border-width: 2px;
+
+    .modal-header {
+        border-bottom: none;
+        color: var(--accent-blue);
+    }
+
+    .modal-body {
+        color: var(--primary-white);
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+}
+
+.btn-modal-close {
+    color: var(--primary-white);
+}
+
+.btn-modal-close:hover {
+    opacity: 0.8;
 }
