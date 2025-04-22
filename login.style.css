@@ -325,10 +325,30 @@
         }
     }
 }
-
+.bg-dark-background-blue{
+    background-color: var(--dark-background-blue);
+}
 .bg-gradient-blue {    
     background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
 }
+.custom-card-border{
+    border: none;
+    box-shadow: none; /* Or adjust to be more even */
+}
+.bg-updated-gradient-blue {
+    background: #2854AB; /* Fallback color */
+    background: linear-gradient(
+      200deg,
+      rgba(40, 84, 171, 1) 0%,     /* Starting blue */
+      rgba(25, 57, 133, 1) 44%,    /* Midpoint darker blue */
+      rgba(6, 10, 20, 1) 100%      /* Deep dark end */
+    );
+}  
+
+.custom-card-width {
+    width: 450px;
+    max-width: 90%; /* Responsive fallback */
+  }
 
 .modal-content {
     background-color: var(--primary-dark);

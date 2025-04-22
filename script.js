@@ -89,3 +89,8 @@ function hideTrailerModal() {
     trailerModal.hide();
 
 }
+
+/*--Login Nav Function--*/
+document.getElementById("logInBtn").addEventListener("click", function () {
+    window.location.href = "login.html"; // Change this to your target page
+});
