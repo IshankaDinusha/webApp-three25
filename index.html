@@ -17,19 +17,29 @@
     <div class="container-fluid container-lg bg-primary-dark">
 
         <!-- nav-bar -->
-        <div class="row px-4 bg-accent-blue">
+        <div class="row px-4 bg-gradient-blue">
 
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-xl">
 
                 <div class="container-fluid">
                     <a class="navbar-brand p-0" href="#">
                         <img src="images/logo-small.png" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
+                    <div class="flex-grow-1 flex-xl-grow-0 text-end">
+                        <button class="nav-search-btn rounded-pill me-2 d-xl-none"
+                            style="padding-left: 8px; padding-right: 8px;">
+                            <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                            Search...
+                        </button>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -38,16 +48,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Movies</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item text-nowrap">
                                 <a class="nav-link" href="#">TV Series</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Categories</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item text-nowrap">
                                 <a class="nav-link" href="#">Our Subtitle Team</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item text-nowrap">
                                 <a class="nav-link" data-bs-toggle="collapse" href="#moreLinksMenu" role="button"
                                     aria-expanded="false" aria-controls="moreLinksMenu">
                                     More Links
@@ -55,12 +65,15 @@
                                 </a>
                             </li>
                         </ul>
-                        <button class="btn btn-accent-dark rounded-circle me-2"
-                            style="padding-left: 10px; padding-right: 10px;">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        
+
+                        <button class="nav-search-btn rounded-pill text-nowrap mx-2 d-none d-xl-block">
+                            <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                            Search...
                         </button>
-                        <button class="btn btn-outline-dark rounded-pill me-2">Sign Up</button>
-                        <button class="btn btn-dark rounded-pill">Log In</button>
+
+                        <button class="btn btn-primary rounded-pill text-nowrap me-2 d-none d-xl-block">Sign Up</button>
+                        <button class="btn btn-black rounded-pill text-nowrap d-none d-xl-block">Log In</button>
                     </div>
                 </div>
             </nav>
@@ -69,7 +82,7 @@
         <!-- nav-bar -->
 
         <!-- more-links-menu -->
-        <div class="row collapse px-4" id="moreLinksMenu">
+        <div class="row collaps px-4" id="moreLinksMenu">
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3">
 
@@ -394,8 +407,8 @@
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
-                                    The Last Voyage of Demeter (2023)
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                    Prince Of Persia The Sands Of Time (2010)
                                 </h6>
 
                                 <p class="card-text">14 January 2023</p>
@@ -425,13 +438,12 @@
                     <div class="col">
                         <div class="card border-0 bg-card-dark-blue">
 
-                            <img src="images/posters/intersteller.webp" class="card-img-top"
-                                alt="...">
+                            <img src="images/posters/intersteller.webp" class="card-img-top" alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
-                                    The Last Voyage of Demeter (2023)
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                    Intersteller (2014)
                                 </h6>
 
                                 <p class="card-text">14 January 2023</p>
@@ -466,7 +478,7 @@
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -502,7 +514,7 @@
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -538,7 +550,7 @@
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -574,7 +586,7 @@
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -619,14 +631,14 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-6 g-3">
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -655,14 +667,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -691,14 +703,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -727,14 +739,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -763,14 +775,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -799,14 +811,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-blue">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -892,14 +904,14 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-6 g-3">
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -928,14 +940,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -964,14 +976,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1000,14 +1012,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1036,14 +1048,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1072,14 +1084,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1124,14 +1136,14 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-6 g-3">
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1160,14 +1172,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1196,14 +1208,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1232,14 +1244,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1268,14 +1280,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1304,14 +1316,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card border-0 bg-card-dark-mix-mono">
+                        <div class="card border-0 bg-card-dark-blue">
 
                             <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
                                 alt="...">
 
                             <div class="card-body">
 
-                                <h6 class="card-title fw-semibold line-limit-3">
+                                <h6 class="card-title fw-semibold fixed-height-line-limit-3">
                                     The Last Voyage of Demeter (2023)
                                 </h6>
 
@@ -1518,7 +1530,7 @@
                         <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" aria-label="Close"
                             onclick="hideTrailerModal();"></i>
                     </div>
-                
+
                 </div>
 
                 <div class="modal-body p-0" style="aspect-ratio: 16/9;">
@@ -1528,7 +1540,8 @@
                 </div>
 
                 <div class="modal-footer justify-content-center">
-                    <a href="#" class="link-accent-blue">Download Subtitles<i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                    <a href="#" class="link-accent-blue">Download Subtitles<i
+                            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
                 </div>
 
             </div>
