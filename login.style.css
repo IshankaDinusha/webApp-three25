@@ -13,6 +13,7 @@
     --primary-black: #060A14;
     --primary-green: #a6e3a1;
     --dark-background-blue: #010D26;
+    --login-btn-blue: #074B73;
 
 }
 
@@ -324,6 +325,9 @@
             }
         }
     }
+}
+.bg-login-btn-blue{
+    background-color: var(--login-btn-blue);
 }
 .bg-dark-background-blue{
     background-color: var(--dark-background-blue);
