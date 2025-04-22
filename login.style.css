@@ -17,10 +17,11 @@
 
 }
 
-.btn {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+#signUpLink {
+    color: var(--primary-yellow);
+    
+    text-decoration: none;
+  }
 
 .btn-dark {
     background-color: var(--primary-dark);
