@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subtitle Upload Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🎬 Upload Subtitle</h2>
+
+  <div class="section">
+    <h3>Step 1: Search Actor</h3>
+    <input type="text" id="actorSearch" placeholder="Enter actor name..." />
+    <button onclick="searchActor()">Search</button>
+
+    <div id="actorResult"></div>
+
+    <div id="addActorForm" class="hidden">
+      <h4>Actor not found. Add new actor:</h4>
+      <label for="newActorName">Actor Name:</label>
+      <input type="text" id="newActorName" />
+
+      <label for="newActorImage">Actor Image URL:</label>
+      <input type="text" id="newActorImage" />
+
+      <button onclick="addNewActor()">Add Actor</button>
+    </div>
+  </div>
+
+  <form id="subtitleForm" onsubmit="submitForm(event)">
+    <div class="section">
+      <h3>Step 2: Subtitle Info</h3>
+      <label for="title">Title:</label>
+      <input type="text" id="title" required />
+
+      <label for="subtitle">Subtitle:</label>
+      <input type="text" id="subtitle" required />
+
+      <label for="description">Description:</label>
+      <textarea id="description" rows="4" required></textarea>
+
+      <label for="subtitleLink">Subtitle File Link:</label>
+      <input type="url" id="subtitleLink" required />
+
+      <label for="trailerLink">Trailer Link:</label>
+      <input type="url" id="trailerLink" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const actorDB = ['Tom Hanks', 'Emma Stone', 'Robert Downey Jr.'];
+    let selectedActor = null;
+
+    function searchActor() {
+      const input = document.getElementById('actorSearch').value.trim();
+      const result = document.getElementById('actorResult');
+      const addForm = document.getElementById('addActorForm');
+
+      if (actorDB.includes(input)) {
+        selectedActor = input;
+        result.innerHTML = `<p>✅ Actor found: <strong>${input}</strong></p>`;
+        addForm.classList.add('hidden');
+      } else {
+        result.innerHTML = `<p>❌ Actor not found: <strong>${input}</strong></p>`;
+        document.getElementById('newActorName').value = input;
+        addForm.classList.remove('hidden');
+        selectedActor = null;
+      }
+    }
+
+    function addNewActor() {
+      const name = document.getElementById('newActorName').value.trim();
+      const image = document.getElementById('newActorImage').value.trim();
+
+      if (name && image) {
+        actorDB.push(name);
+        selectedActor = name;
+        document.getElementById('actorResult').innerHTML = `<p>✅ New actor added: <strong>${name}</strong></p>`;
+        document.getElementById('addActorForm').classList.add('hidden');
+      } else {
+        alert('Please provide both actor name and image URL.');
+      }
+    }
+
+    function submitForm(event) {
+      event.preventDefault();
+
+      if (!selectedActor) {
+        alert('Please select or add an actor first.');
+        return;
+      }
+
+      const data = {
+        actor: selectedActor,
+        title: document.getElementById('title').value,
+        subtitle: document.getElementById('subtitle').value,
+        description: document.getElementById('description').value,
+        subtitleLink: document.getElementById('subtitleLink').value,
+        trailerLink: document.getElementById('trailerLink').value,
+      };
+
+      console.log('📤 Submitted Data:', data);
+      alert('Subtitle info submitted successfully! (Check console for data)');
+    }
+  </script>
+</body>
+</html>
