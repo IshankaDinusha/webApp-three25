@@ -135,7 +135,8 @@
     text-align: start;
 }
 
-.nav-search-btn:hover, .nav-search-btn:focus {
+.nav-search-btn:hover,
+.nav-search-btn:focus {
     background-color: var(--primary-dark-blue);
     color: var(--primary-white);
     border-color: var(--primary-white);
@@ -164,12 +165,14 @@
 .nav-link {
     color: var(--primary-white);
 }
+
 .nav-link.active {
     color: var(--primary-yellow) !important;
     font-weight: 600;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--primary-yellow);
 }
 
@@ -326,7 +329,7 @@
     }
 }
 
-.bg-gradient-blue {    
+.bg-gradient-blue {
     background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
 }
 
@@ -346,5 +349,122 @@
 
     .modal-footer {
         border-top: none;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .fixed-height-line-limit-3 {
+        line-height: 0.8rem;
+        height: 1.6rem;
+        overflow: hidden;
+    
+        /* add the 'text-overflow: ellipsis' effect */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .card-body {
+
+        .card-title {
+            font-size: 0.7rem;
+        }
+
+        .card-text {
+            font-size: 0.6rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    font-size: 0.8rem;
+                    margin-right: 2px;
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    font-size: 0.6rem;
+                }
+
+                i:nth-of-type(2) {
+                    font-size: 0.6rem;
+                }
+
+                span:nth-of-type(1) {
+                    font-size: 0.6rem !important;
+                    margin-right: 2px !important;
+                }
+
+                span:nth-of-type(2) {
+                    font-size: 0.6rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+
+    .fixed-height-line-limit-3 {
+        line-height: 1.1rem;
+        height: 2.2rem;
+        overflow: hidden;
+    
+        /* add the 'text-overflow: ellipsis' effect */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .card-body {
+
+        .card-title {
+            font-size: 0.9rem;
+        }
+
+        .card-text {
+            font-size: 0.75rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    font-size: 1.2rem;
+                    margin-right: 2px;
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    font-size: 1rem;
+                }
+
+                i:nth-of-type(2) {
+                    font-size: 1rem;
+                }
+
+                span:nth-of-type(1) {
+                    font-size: 1rem !important;
+                    margin-right: 5px !important;
+                }
+
+                span:nth-of-type(2) {
+                    font-size: 1rem !important;
+                }
+            }
+        }
     }
 }
