@@ -353,7 +353,67 @@
 }
 
 
-@media (max-width: 360px) {
+
+@media (min-width: 300px) {
+
+    .fixed-height-line-limit-3 {
+        line-height: 0.6rem;
+        height: 1.2rem;
+        overflow: hidden;
+    
+        /* add the 'text-overflow: ellipsis' effect */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .card-body {
+
+        .card-title {
+            font-size: 0.5rem;
+        }
+
+        .card-text {
+            font-size: 0.4rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    font-size: 0.7rem;
+                    margin-right: 2px;
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    font-size: 0.5rem;
+                }
+
+                i:nth-of-type(2) {
+                    font-size: 0.5rem;
+                }
+
+                span:nth-of-type(1) {
+                    font-size: 0.5rem !important;
+                    margin-right: 2px !important;
+                }
+
+                span:nth-of-type(2) {
+                    font-size: 0.5rem !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 320px) {
 
     .fixed-height-line-limit-3 {
         line-height: 0.8rem;
