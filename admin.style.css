@@ -15,6 +15,7 @@
     --dark-background-blue: #010D26;
     --offcanvas-blue: #074B73;
     --offcanvas-selection-blue: #487B99;
+    --subtitle-orange: #F29B10;
 
 }
 
@@ -341,8 +342,11 @@
     color: #fff; /* white text on hover */
 }
 .offcanvas-body li {
-    margin-bottom: 1rem; /* Adjust as needed */
+    margin-bottom: 0.75rem; /* Adjust as needed */
   }
+.bg-subtitle-orange{
+    background-color: var(--subtitle-orange);
+}
 .bg-dark-background-blue{
     background-color: var(--dark-background-blue);
 }
