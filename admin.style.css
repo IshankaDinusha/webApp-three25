@@ -13,7 +13,8 @@
     --primary-black: #060A14;
     --primary-green: #a6e3a1;
     --dark-background-blue: #010D26;
-    --login-btn-blue: #074B73;
+    --offcanvas-blue: #074B73;
+    --offcanvas-selection-blue: #487B99;
 
 }
 
@@ -327,9 +328,21 @@
         }
     }
 }
-.bg-login-btn-blue{
-    background-color: var(--login-btn-blue);
+/* This is the CSS for the offcanvas component. It sets the background color and text color for the offcanvas component. */
+.bg-offcanvas-blue{
+    background-color: var(--offcanvas-blue);
 }
+.bg-offcanvas-selection-blue{
+    background-color: var(--offcanvas-selection-blue);
+}
+.offcanvas-body a:hover {
+    background-color: var(--offcanvas-selection-blue); /* blue background on hover */
+    border-radius: 5px;
+    color: #fff; /* white text on hover */
+}
+.offcanvas-body li {
+    margin-bottom: 1rem; /* Adjust as needed */
+  }
 .bg-dark-background-blue{
     background-color: var(--dark-background-blue);
 }

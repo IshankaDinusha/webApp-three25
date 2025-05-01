@@ -10,65 +10,60 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="admin.style.css">
 </head>
-<body>
-    <div class="row px-4 bg-gradient-blue">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid">
-                <a class="navbar-brand p-0" href="#">
-                    <img src="images/logo-small.png" alt="">
-                </a>
+<body class="bg-accent-dark">
+    <div class="container-fluid bg-primary-dark">
+           <!-- nav-bar -->
+            <div class="row px-4 bg-gradient-blue">
+                <nav class="navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
+                    <!-- Left section -->
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- Button with icon triggers offcanvas -->
+                        <button class="btn" type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions"
+                                aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                        </button>
+                        <p class="mb-0 text-white">SubZone Admin</p>                     
+                    </div>
 
-                <div class="flex-grow-1 flex-xl-grow-0 text-end">
-                    <button class="nav-search-btn rounded-pill me-2 d-xl-none"
-                        style="padding-left: 8px; padding-right: 8px;">
-                        <i class="fa-solid fa-magnifying-glass mx-1"></i>
-                        Search...
-                    </button>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <!-- Right section -->
+                    <div class="d-flex align-items-center gap-3">
+                        <p class="mb-0 text-white">Hi there Sashin!</p>
+                        <a class="navbar-brand p-0" href="#">
+                            <img src="images/logo-small.png" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- nav-bar -->
+            <!-- Offcanvas component -->
+            <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">Dashboard</h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Movies</a>
-                        </li>
-                        <li class="nav-item text-nowrap">
-                            <a class="nav-link" href="#">TV Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Categories</a>
-                        </li>
-                        <li class="nav-item text-nowrap">
-                            <a class="nav-link" href="#">Our Subtitle Team</a>
-                        </li>
-                        <li class="nav-item text-nowrap">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#moreLinksMenu" role="button"
-                                aria-expanded="false" aria-controls="moreLinksMenu">
-                                More Links
-                                <i class="fa-solid fa-chevron-down ms-2"></i>
-                            </a>
-                        </li>
+                <div class="offcanvas-body">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-gauge me-2 fa-lg" style="color: #ffffff;"></i>Overview</a></li>
+                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-briefcase me-2 fa-lg" style="color: #ffffff;"></i>Your Work</a></li>
+                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-bell me-2 fa-lg" style="color: #ffffff;"></i>Requests</a></li>
+                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-regular fa-thumbs-up me-2 fa-lg" style="color: #ffffff;"></i>Subtitle Approval</a></li>
+                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-puzzle-piece me-2 fa-lg" style="color: #ffffff;"></i>New Subtitle</a></li>
                     </ul>
-                    <button class="nav-search-btn rounded-pill text-nowrap mx-2 d-none d-xl-block">
-                        <i class="fa-solid fa-magnifying-glass mx-1"></i>
-                        Search...
-                    </button>
-
-                    <button class="btn btn-primary rounded-pill text-nowrap me-2 d-none d-xl-block">Sign Up</button>
-                    <button class="btn btn-black rounded-pill text-nowrap d-none d-xl-block" id="logInBtn">Log In</button>
                 </div>
             </div>
-        </nav>
+            <!-- Offcanvas component -->
+                  
+
+
+
     </div>
-    <!-- nav-bar -->
     
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <!--<script src="https://www.youtube.com/iframe_api"></script>-->
+    <script src="script.js"></script>
 </body>
 </html>
