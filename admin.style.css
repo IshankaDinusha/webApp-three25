@@ -16,7 +16,11 @@
     --offcanvas-blue: #074B73;
     --offcanvas-selection-blue: #487B99;
     --subtitle-orange: #F29B10;
+    --dark-req-background: #1A2234;
 
+}
+.bg-dark-req-background {
+    background-color: var(--dark-req-background);
 }
 
 #signUpLink {
