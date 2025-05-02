@@ -232,9 +232,10 @@
     -webkit-line-clamp: 3;
     line-clamp: 3;
 }
-/*--carousel--
+/*--carousel--*/
 .carousel-inner {
-    height: 600px; /* or any fixed height you want
+   
+    height: auto; /* or any fixed height you want */
 }
 
 .carousel-item img {
@@ -242,7 +243,7 @@
     height: 100%;
     object-fit: cover;
 }
---carousel--*/
+/*--carousel--*/
 .bg-card-blue {
 
     background-image: linear-gradient(var(--primary-yellow), var(--accent-blue));
