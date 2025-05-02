@@ -56,12 +56,12 @@
             <!-- Offcanvas component -->
              <div class="container-sm d-flex flex-column align-items-center p-0">
                 <!--Overview-->
-                <div id="overview" class="w-100 p-0 my-4">
-                    <div class="d-flex flex-column align-items-start">
+                <div id="overview" class="w-100 px-4 my-4">
+                    <div id="overviewComponents" class="d-flex flex-column align-items-start">
                         <h2 class="text-white fs-5 ms-0" >Overview</h2>
                       
                         <!-- Flex container -->
-                        <div class="d-flex w-100 flex-wrap gap-4">
+                        <div id="overviewCards" class="d-flex w-100 flex-wrap gap-4">
                             <!-- Card 1 -->
                             <div class="card bg-subtitle-orange text-white d-flex flex-column justify-content-between rounded" style="width: 100%; max-width: 300px; height: auto;">
                                 <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
@@ -120,10 +120,243 @@
     
                 </div>
                 <!--Overview-->
-                <div id="yourWork" class="w-100 p-0 my-4">
+                <div id="yourWork" class="w-100 px-4 my-4">
                     <div class="d-flex flex-column align-items-start">
                         <h2 class="text-white fs-5 ms-0" >Your Work</h2>
                         <!-- Flex container -->
+                        <div class="col-12">
+                            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 row-cols-xxl-6 g-3">
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->
+                                <!--movie card element--> 
+                                <div class="col">
+                                    <div class="card border-0 bg-transparent">
+            
+                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                            alt="...">
+            
+                                        <div class="card-body bg-card-dark-blue rounded-bottom">
+            
+                                            <h6 class="card-title fw-semibold fixed-height-line-limit-3">
+                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
+                                            </h6>
+            
+                                            <p class="card-text">14 January 2023</p>
+            
+                                            <div class="d-flex justify-content-between">
+            
+                                                <div>
+                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
+                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                                    </i>
+                                                </div>
+            
+                                                <div>
+                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                        <div class="w-100 d-flex bg-transparent justify-content-center align-items-center p-2">
+                                            <button class="button-primary rounded-pill py-1 px-4 me-3" style="background-color: #DD2A2A; border: none;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
+                                            <button class="button-primary rounded-pill py-1 px-4" style="background-color: #1D6FA4; border: none;"><i class="fa-solid fa-pen" style="color: #ffffff;"></i></button>
+                                        </div>
+                                    </div>            
+                                </div>
+                                <!--movie card element-->        
+            
+                            </div>
+                        </div>
                     
                 </div>
              </div>
@@ -136,7 +369,7 @@
 
 
     <script src="bootstrap.bundle.min.js"></script>
-    <!--<script src="https://www.youtube.com/iframe_api"></script>-->
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
 </body>
 </html>

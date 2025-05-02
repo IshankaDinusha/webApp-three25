@@ -390,3 +390,16 @@
         border-top: none;
     }
 }
+@media only screen and (max-width: 600px){
+    #overviewComponets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #overviewCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
