@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="admin.style.css">
 </head>
 <body class="bg-dark-background-blue">
-    <div class="container-fluid bg-primary-dark">
+    <div class="container-fluid">
            <!-- nav-bar -->
             <div class="row px-4 bg-gradient-blue">
                 <nav class="navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center">
@@ -38,7 +38,7 @@
             </div>
             <!-- nav-bar -->
             <!-- Offcanvas component -->
-            <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="max-width: 300px;">
                 <div class="offcanvas-header">
                 <h5 class="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">Dashboard</h5>
                 <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -54,69 +54,80 @@
                 </div>
             </div>
             <!-- Offcanvas component -->
-            <div id="overview" class="container-md my-4 px-5">
-                <div class="d-flex flex-column align-items-start">
-                    <h2 class="text-white fs-5 ms-0" >Overview</h2>
-                  
-                    <!-- Flex container -->
-                    <div class="d-flex w-100 flex-wrap gap-4">
-                        <!-- Card 1 -->
-                        <div class="card bg-subtitle-orange text-white d-flex flex-column justify-content-between rounded" style="width: 100%; max-width: 320px; height: auto;">
-                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                <div>
-                                <p class="fs-1 fw-bold mb-2">251</p>
-                                <p class="fs-6 fw-medium">Total Subtitles</p>
+             <div class="container-sm d-flex flex-column align-items-center p-0">
+                <!--Overview-->
+                <div id="overview" class="w-100 p-0 my-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <h2 class="text-white fs-5 ms-0" >Overview</h2>
+                      
+                        <!-- Flex container -->
+                        <div class="d-flex w-100 flex-wrap gap-4">
+                            <!-- Card 1 -->
+                            <div class="card bg-subtitle-orange text-white d-flex flex-column justify-content-between rounded" style="width: 100%; max-width: 300px; height: auto;">
+                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                    <div>
+                                    <p class="fs-1 fw-bold mb-2">251</p>
+                                    <p class="fs-6 fw-medium">Total Subtitles</p>
+                                    </div>
+                                    <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #e9f32c;"></i>
                                 </div>
-                                <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #e9f32c;"></i>
+                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #BA760A;">                                
+                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
+                                </div>
                             </div>
-                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #BA760A;">                                
-                                    <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
+                           <!-- Card 2 -->
+                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#F012BF ; width: 100%; max-width: 300px; height: auto;">
+                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                    <div>
+                                    <p class="fs-1 fw-bold mb-2">251</p>
+                                    <p class="fs-6 fw-medium">Total Requests</p>
+                                    </div>
+                                    <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #FF98E7;"></i>
+                                </div>
+                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #D313AA;">                             
+                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
+                                </div>
                             </div>
+                            <!-- Card 3 -->
+                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#00A65A ; width: 100%; max-width: 300px; height: auto;">
+                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                    <div>
+                                    <p class="fs-1 fw-bold mb-2">251</p>
+                                    <p class="fs-6 fw-medium">Subtitles Done by You</p>
+                                    </div>
+                                    <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #32815E;"></i>
+                                </div>
+                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #00974E;">                             
+                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
+                                </div>
+                            </div> 
+                            <!-- Card 4 -->
+                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#0073B6 ; width: 100%; max-width: 300px; height: auto;">
+                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                    <div>
+                                    <p class="fs-1 fw-bold mb-2">251</p>
+                                    <p class="fs-6 fw-medium">Requests Done by You</p>
+                                    </div>
+                                    <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #00609C;"></i>
+                                </div>
+                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #0067A3;">                             
+                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
+                                </div>
+                            </div>                  
                         </div>
-                       <!-- Card 2 -->
-                       <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#F012BF ; width: 100%; max-width: 320px; height: auto;">
-                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                <div>
-                                <p class="fs-1 fw-bold mb-2">251</p>
-                                <p class="fs-6 fw-medium">Total Requests</p>
-                                </div>
-                                <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #FF98E7;"></i>
-                            </div>
-                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #D313AA;">                             
-                                    <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                       <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#00A65A ; width: 100%; max-width: 320px; height: auto;">
-                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                <div>
-                                <p class="fs-1 fw-bold mb-2">251</p>
-                                <p class="fs-6 fw-medium">Subtitles Done by You</p>
-                                </div>
-                                <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #32815E;"></i>
-                            </div>
-                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #00974E;">                             
-                                    <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                            </div>
-                        </div> 
-                        <!-- Card 4 -->
-                       <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#0073B6 ; width: 100%; max-width: 320px; height: auto;">
-                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                <div>
-                                <p class="fs-1 fw-bold mb-2">251</p>
-                                <p class="fs-6 fw-medium">Requests Done by You</p>
-                                </div>
-                                <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #00609C;"></i>
-                            </div>
-                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #0067A3;">                             
-                                    <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                            </div>
-                        </div>                  
+                        
                     </div>
+    
+                </div>
+                <!--Overview-->
+                <div id="yourWork" class="w-100 p-0 my-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <h2 class="text-white fs-5 ms-0" >Your Work</h2>
+                        <!-- Flex container -->
                     
                 </div>
-
-            </div>
+             </div>
+            
 
 
 
