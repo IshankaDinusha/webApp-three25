@@ -30,12 +30,12 @@
                     <div
                         class="d-flex justify-content-end flex-grow-1 flex-lg-grow-0 text-end flex-nowrap align-items-center">
 
-                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none">
+                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none" onclick="searchModal.show();">
                             <i class="fa-solid fa-magnifying-glass mx-1"></i>
                             Search...
                         </button>
 
-                        <button class="nav-search-btn text-white me-2 d-block d-sm-none">
+                        <button class="nav-search-btn text-white me-2 d-block d-sm-none" onclick="searchModal.show();">
                             <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
                         </button>
 
@@ -92,12 +92,12 @@
 
                         <div class="d-flex justify-content-start justify-content-lg-end flex-grow-1">
                             
-                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block">
+                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block" onclick="searchModal.show();">
                                 <i class="fa-solid fa-magnifying-glass mx-1"></i>
                                 Search...
                             </button>
 
-                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none">
+                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none" onclick="searchModal.show();">
                                 <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
                             </button>
 
@@ -1646,13 +1646,54 @@
 
                 <div class="modal-footer justify-content-center">
 
-                    <p class="mb-3 text-white">Don't have an account? <span class="link-accent-blue">Sign Up</span></p>
+                    <p class="mb-3 text-white">Don't have an account? <a href="sign-up.html" class="link-accent-blue">Sign Up</a></p>
 
                 </div>
             </div>
         </div>
     </div>
     <!-- Login Modal -->
+
+    <!-- Search Modal -->
+    <div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h3 class="mb-4 text-center mt-4 text-accent-blue fw-semibold">SubLK Search</h3>
+                    <p class="text-center">Enter a movie or tv show name to search.</p>
+
+                    <div class="mb-3 px-4">
+                        <input type="email" class="form-control rounded-pill" id="inputLoginEmail"
+                            placeholder="Search Subtitles...">
+                    </div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+
+                    <p class="mb-3 text-white">Can't find a subtitle? <span class="link-accent-blue">Request Now!</span></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal -->
 
 
 

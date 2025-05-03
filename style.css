@@ -463,6 +463,38 @@
 
 }
 
+.search-modal {
+
+    .modal-content {
+
+        .modal-body {
+
+            input {
+
+                padding-left: 1rem;
+                padding-right: 1rem;
+                background-color: var(--secondary-dark);
+                color: var(--primary-white) !important;
+                border-color: var(--accent-dark);
+            }
+
+            input:focus {
+                background-color: var(--secondary-dark);
+                border-color: var(--accent-blue);
+
+            }
+
+            input::placeholder {
+
+                color: var(--primary-white);
+                opacity: 0.5;
+            }
+        }
+    }
+
+
+}
+
 /* subtitle count section */
 .subtitle-count {
 

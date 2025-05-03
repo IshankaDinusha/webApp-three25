@@ -1,6 +1,7 @@
 const errorModal = createModal("errorModal");
 const trailerModal = createModal("trailerModal");
 const logInModal = createModal("logInModal");
+const searchModal = createModal("searchModal");
 
 function createModal(id) {
 
