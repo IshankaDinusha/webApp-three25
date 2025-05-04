@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubLK</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,7 +31,8 @@
                     <div
                         class="d-flex justify-content-end flex-grow-1 flex-lg-grow-0 text-end flex-nowrap align-items-center">
 
-                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none" onclick="searchModal.show();">
+                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none"
+                            onclick="searchModal.show();">
                             <i class="fa-solid fa-magnifying-glass mx-1"></i>
                             Search...
                         </button>
@@ -91,13 +93,15 @@
                         </ul>
 
                         <div class="d-flex justify-content-start justify-content-lg-end flex-grow-1">
-                            
-                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block" onclick="searchModal.show();">
+
+                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block"
+                                onclick="searchModal.show();">
                                 <i class="fa-solid fa-magnifying-glass mx-1"></i>
                                 Search...
                             </button>
 
-                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none" onclick="searchModal.show();">
+                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none"
+                                onclick="searchModal.show();">
                                 <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
                             </button>
 
@@ -106,7 +110,8 @@
                                 onclick="signUpModal.show();">
                                 Sign Up
                             </a>
-                            <button class="btn btn-black rounded-pill text-nowrap mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
+                            <button
+                                class="btn btn-black rounded-pill text-nowrap mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
                                 onclick="logInModal.show();">
                                 Log In
                             </button>
@@ -377,7 +382,7 @@
         <!-- more-links-menu -->
 
         <!-- carousel -->
-        <div class="row">
+        <div class="row d-none">
 
             <div id="carouselExampleCaptions" class="carousel slide px-0" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -417,6 +422,78 @@
             </div>
         </div>
         <!-- carousel -->
+
+        <div class="row my-5">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+
+                <!-- Slides wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="background-image: url(images/slides/superman-2025-slide.jpg);">
+
+                        <a href="">
+                            <div class="slide-overlay"></div>
+                        </a>
+
+                        <!-- <p class="silde-text">Superman 2025</p> -->
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(images/slides/companion-2025-slide.jpg);">
+
+                        <a href="">
+                            <div class="slide-overlay"></div>
+                        </a>
+
+                        <!-- <p class="silde-text">Superman 2025</p> -->
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(images/slides/a-minecraft-movie-2025-slide.jpg);">
+
+                        <a href="">
+                            <div class="slide-overlay"></div>
+                        </a>
+
+                        <!-- <p class="silde-text">Superman 2025</p> -->
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(images/slides/my-fault-london-2025-slide.jpg);">
+
+                        <a href="">
+                            <div class="slide-overlay"></div>
+                        </a>
+
+                        <!-- <p class="silde-text">Superman 2025</p> -->
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(images/slides/the-gorge-2025-slide.jpg);">
+
+                        <a href="">
+                            <div class="slide-overlay"></div>
+                        </a>
+
+                        <!-- <p class="silde-text">Superman 2025</p> -->
+                    </div>
+                    <!-- Slides -->
+
+                </div>
+                <!-- Sildes wrapper -->
+
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- pagination -->
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- navigation buttons -->
+            </div>
+            <!-- Slider main container -->
+
+        </div>
 
         <!-- movies-section -->
         <div class="row bg-secondary-dark px-2 py-4 p-md-4">
@@ -1491,7 +1568,8 @@
                 <hr class="text-white">
             </div>
 
-            <div class="col-12 d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-between">
+            <div
+                class="col-12 d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-between">
 
                 <div>
                     <p class="text-white"><small>&copy; 2025 Sub LK. All rights reserved.</small></p>
@@ -1647,7 +1725,8 @@
 
                 <div class="modal-footer justify-content-center">
 
-                    <p class="mb-3 text-white">Don't have an account? <a href="sign-up.html" class="link-accent-blue">Sign Up</a></p>
+                    <p class="mb-3 text-white">Don't have an account? <a href="sign-up.html"
+                            class="link-accent-blue">Sign Up</a></p>
 
                 </div>
             </div>
@@ -1656,7 +1735,8 @@
     <!-- Login Modal -->
 
     <!-- Search Modal -->
-    <div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+    <div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModal"
+        aria-hidden="true">
 
         <div class="modal-dialog modal-dialog-centered">
 
@@ -1688,7 +1768,8 @@
 
                 <div class="modal-footer justify-content-center">
 
-                    <p class="mb-3 text-white">Can't find a subtitle? <span class="link-accent-blue">Request Now!</span></p>
+                    <p class="mb-3 text-white">Can't find a subtitle? <span class="link-accent-blue">Request Now!</span>
+                    </p>
 
                 </div>
             </div>
@@ -1699,6 +1780,7 @@
 
 
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
 

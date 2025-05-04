@@ -3,6 +3,36 @@ const trailerModal = createModal("trailerModal");
 const logInModal = createModal("logInModal");
 const searchModal = createModal("searchModal");
 
+const swiper = new Swiper('.swiper', {
+
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    speed: 1000,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+
+    coverflowEffect: {
+        depth: 200,
+        rotate: 60,
+        stretch: 40,
+        slideShadows: true,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
 function createModal(id) {
 
     var modal = document.getElementById(id);
@@ -196,7 +226,7 @@ function changeSignUpView(isLogin) {
 
             signUpView.classList.add("d-none");
             logInView.classList.remove("d-none");
-            
+
             setTimeout(function () {
 
                 logInView.classList.add("da-show");
