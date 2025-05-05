@@ -25,7 +25,7 @@
 
 .line-clamp-2 {
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -426,7 +426,7 @@
         font-size: 0.86rem;
       }
     .line-clamp-2 {
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 8;
       }
     .work-custom-button-margin{
         margin-right: 0.3rem;
