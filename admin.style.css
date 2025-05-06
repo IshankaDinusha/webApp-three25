@@ -424,9 +424,34 @@ body nav{
 body nav div button i{
     font-size: 1.5rem;
 }
+.custom-form-css{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/* Default order on small screens (swapped) */
+.first {
+    order: 1;
+}
+.second {
+    order: 2;
+}
+
 @media only screen and (max-width: 600px){
+    .first {
+        order: 2;
+    }
+    .second {
+        order: 1;
+    }
     .custom-nav-padding {
         padding: 0;/* Responsive fallback */
+    }
+    .custom-form-css{
+        display: flex;
+        flex-direction: column;
     }
     #navbar {
     background-image: none;        
