@@ -32,6 +32,16 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+window.onscroll = function () {
+
+    if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+        
+        document.getElementById("navbar").classList.add("on-scroll-bg-gradient-blue");
+    } else {
+        document.getElementById("navbar").classList.remove("on-scroll-bg-gradient-blue");
+    }
+}
+
 
 function createModal(id) {
 
