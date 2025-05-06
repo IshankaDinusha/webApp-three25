@@ -420,7 +420,10 @@ body nav{
 .custom-nav-padding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;/* Responsive fallback */
-  }
+}
+body nav div button i{
+    font-size: 1.5rem;
+}
 @media only screen and (max-width: 600px){
     .custom-nav-padding {
         padding: 0;/* Responsive fallback */
@@ -440,6 +443,9 @@ body nav{
         justify-content: space-between;
         padding: 0.5rem 2rem 0.5rem 2rem;
         align-items: center;
+    }
+    body nav div button i{
+        font-size: 2rem;
     }
     body nav div:last-of-type{
         display: flex;
