@@ -412,7 +412,7 @@
 }
 #navbar{
     background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
-
+    width: 100%;
 }
 body nav{
     padding: 1rem 2rem 1rem 2rem;
