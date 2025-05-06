@@ -126,6 +126,33 @@
     background-color: var(--primary-dark);
 }
 
+.bg-primary-dark-scroll {
+
+    background-color: var(--primary-dark);
+}
+
+.bg-primary-dark-scroll::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+.on-scroll-bg-gradient-blue::before {
+    opacity: 1;
+}
+
+.bg-gradient-blue {
+
+    background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
+}
+
 .bg-secondary-dark {
     background-color: var(--secondary-dark);
 }
@@ -340,11 +367,6 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
-}
-
-.bg-gradient-blue {
-
-    background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
 }
 
 .bg-card-dark-blue {
