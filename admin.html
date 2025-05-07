@@ -440,10 +440,10 @@
 
                     <div class="d-flex gap-2">
                         <button
-                            class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
+                            class="btn btn-hover-white border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
                             as all read</button>
                         <button
-                            class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
+                            class="btn btn-hover-white border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
                             all requests</button>
                     </div>
 
@@ -530,7 +530,7 @@
                     </div>-->
 
                     <div
-                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4 glow-on-hover">
                         <div class="card border-0 bg-dark-req-background">
                             <div class="card-body">
 
@@ -572,7 +572,7 @@
                     </div>
 
                     <div
-                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4 glow-on-hover">
                         <div class="card border-0 bg-dark-req-background">
                             <div class="card-body">
 
@@ -612,7 +612,7 @@
 
 
                     <div
-                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4 glow-on-hover">
                         <div class="card border-0 bg-dark-req-background">
                             <div class="card-body">
 
@@ -660,15 +660,15 @@
                         <h2 class="text-white fs-5 m-0 text-end">Subtitle file approval</h2>
                         <div class="d-flex gap-2">
                             <button
-                                class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
+                                class="btn btn-hover-white border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
                                 as all read</button>
                             <button
-                                class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
+                                class="btn btn-hover-white border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
                                 all requests</button>
                         </div>
                         <!-- Flex container requests-->
                         <form method="post" action="/submit-endpoint"
-                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5 glow-on-hover">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
                                 <!-- New List Selector -->
                                 <select name="status"
@@ -706,7 +706,7 @@
                         <!-- Flex container requests-->
                         <!-- Flex container requests-->
                         <form method="post" action="/submit-endpoint"
-                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5 glow-on-hover">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
                                 <!-- New List Selector -->
                                 <select name="status"
@@ -744,7 +744,7 @@
                         <!-- Flex container requests-->
                         <!-- Flex container requests-->
                         <form method="post" action="/submit-endpoint"
-                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5 glow-on-hover">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
                                 <!-- New List Selector -->
                                 <select name="status"
@@ -800,24 +800,62 @@
                                 </div>
                                 <div class="d-flex flex-column gap-3">
                                     <label for="movieName" class="text-white custom-btn-font">Written by</label>
-                                    <input type="text"  id="movieName" placeholder="Type movie title" class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
+                                    <input type="text"  id="movieName" placeholder="Type written by..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
                                 </div>
                                 <div class="d-flex flex-column gap-3">
                                     <label for="movieName" class="text-white custom-btn-font">Production companies</label>
-                                    <input type="text"  id="movieName" placeholder="Type movie title" class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
+                                    <input type="text"  id="movieName" placeholder="Type production companies..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
                                 </div>
                                 <div class="d-flex flex-column gap-3">
-                                    <label for="movieName" class="text-white custom-btn-font">Production companies</label>
-                                    <input type="text"  id="movieName" placeholder="Type movie title" class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
+                                    <label for="movieName" class="text-white custom-btn-font">Music by</label>
+                                    <input type="text"  id="movieName" placeholder="Type music by..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
                                 </div>
                                 <div class="d-flex flex-column gap-3">
-                                    <label for="movieName" class="text-white custom-btn-font">Production companies</label>
-                                    <input type="text"  id="movieName" placeholder="Type movie title" class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
+                                    <label for="movieName" class="text-white custom-btn-font">Country</label>
+                                    <input type="text"  id="movieName" placeholder="Type country..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
                                 </div>
                                 <div class="d-flex flex-column gap-3">
-                                    <label for="movieName" class="text-white custom-btn-font">Production companies</label>
-                                    <input type="text"  id="movieName" placeholder="Type movie title" class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
+                                    <label for="movieName" class="text-white custom-btn-font">Language</label>
+                                    <input type="text"  id="movieName" placeholder="Type languages available..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);">
                                 </div>
+                                <div class="section d-flex flex-column gap-3">
+                                    <label for="actorSearch" class="text-white custom-btn-font">Search Actor</label>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="text" id="actorSearch" 
+                                               class="rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus" 
+                                               style="background-color: #487B99; color: rgba(0, 0, 0, 1);" 
+                                               placeholder="Enter actor name..." />
+                                        
+                                        <button onclick="searchActor()" 
+                                                class="btn btn-primary rounded-pill px-4 py-3">
+                                          Search
+                                        </button>
+                                      </div>
+                                      
+                                
+                                    <div id="actorResult"></div>
+                                
+                                    <div id="addActorForm" class="hidden d-flex flex-column gap-3">
+                                      <h4 class="text-white custom-btn-font">Actor not found. Add new actor:</h4>
+                                      <label for="newActorName" class="text-white custom-btn-font">Actor Name:</label>
+                                      <input type="text" id="newActorName" placeholder="Enter actor name..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);" />
+                                
+                                      
+                                      <div class="d-flex flex-column gap-2">
+                                        <label for="newActorImage" class="text-white custom-btn-font">Actor Image URL:</label>
+                                        <input type="file" id="newActorImage" 
+                                               accept="image/*"
+                                               class="form-control rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus custom-file-style" 
+                                               style="background-color: #487B99; color: rgba(0, 0, 0, 1);" />
+                                      
+                                        <button onclick="addNewActor()" 
+                                                class="btn btn-primary rounded-pill px-4 py-3">
+                                          Add actor
+                                        </button>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
                                 
                             </form>
                         </div>
@@ -907,6 +945,7 @@
     <script src="bootstrap.bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
+    <script src="script.admin.js"></script>
 
 </body>
 

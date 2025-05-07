@@ -470,6 +470,79 @@ body nav div button i {
 body nav div:last-of-type {
     gap: 1rem;
 }
+.btn-hover-white:hover {
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+}
+.glow-on-hover {
+    position: relative;
+    overflow: visible;
+  }
+
+  .glow-on-hover::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* places glow below the form */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* controls horizontal spread */
+    height: 20px; /* vertical thickness of the glow */
+    background: radial-gradient(ellipse at center, rgba(0, 153, 255, 0.3) 0%, transparent 80%);
+    filter: blur(10px); /* makes it look soft like a shadow */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .glow-on-hover:hover::after {
+    opacity: 1;
+  }
+
+/* Form styles */
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  .hidden {
+    display: none;
+  }
+/* Choose file cs */
+input[type="file"].custom-file-style {
+    background-color: #487B99;
+    color: rgba(0, 0, 0, 1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50rem; /* pill */
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  /* Style the "Choose File" button inside */
+  input[type="file"].custom-file-style::file-selector-button {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="file"].custom-file-style::file-selector-button:hover {
+    background-color: #e0e0e0;
+  }
+
+
 
 @media only screen and (max-width: 600px) {
     .first {
