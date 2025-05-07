@@ -438,6 +438,9 @@ body nav div button i{
 .second {
     order: 2;
 }
+body nav div:last-of-type{
+    gap: 1rem;
+}
 
 @media only screen and (max-width: 600px){
     .first {
@@ -478,8 +481,9 @@ body nav div button i{
         justify-content: center;
         background-image: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
         border-radius: 3rem;
-        padding: 0.5rem 3rem 0.5rem 3rem;
+        padding: 0.65rem 1rem 0.65rem 1rem;
         width: fit-content;
+        gap: 0rem;
     }
     body nav div:last-of-type p{
         color: var(--primary-dark);
