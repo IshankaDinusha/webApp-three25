@@ -128,7 +128,7 @@
 
 .bg-primary-dark-scroll {
 
-    background-color: var(--primary-dark);
+    background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
 }
 
 .bg-primary-dark-scroll::before {
@@ -138,7 +138,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
+    border-bottom: 2px solid var(--accent-blue);
+    background-image: linear-gradient(to left, var(--primary-dark), var(--secondary-dark-blue), var(--primary-black));
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     
@@ -267,6 +268,44 @@
 }
 
 /* nav-toggler */
+
+/* swiper */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    aspect-ratio: 1000/562;
+}
+
+.slide-overlay {
+    background: linear-gradient(to bottom, var(--primary-dark) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, var(--primary-dark) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.silde-text {
+    color: var(--primary-white);
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-white);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-blue);
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--accent-blue);
+}
+/* swiper */
 
 /* offcanvas-nav */
 .offcanvas-nav {
@@ -1243,42 +1282,4 @@
     .container-300 {
         width: 300px;
     }
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 60%;
-    aspect-ratio: 1000/562;
-}
-
-.slide-overlay {
-
-    /* background-image: linear-gradient(to bottom, rgba(255,0,0,0) 20%, var(--primary-dark)); */
-    background: linear-gradient(to bottom, var(--primary-dark) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, var(--primary-dark) 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.silde-text {
-    color: var(--primary-white);
-    position: absolute;
-    bottom: 1.2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.swiper-pagination-bullet {
-    background-color: var(--primary-white);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--accent-blue);
-}
-
-.swiper-button-prev, .swiper-button-next {
-    color: var(--accent-blue);
 }

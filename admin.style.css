@@ -19,28 +19,29 @@
     --dark-req-background: #1A2234;
 
 }
+
 .bg-dark-req-background {
     background-color: var(--dark-req-background);
 }
 
 .line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Default styles for desktop */
 .custom-btn-font {
     font-size: 1rem;
-  }
+}
 
 
 #signUpLink {
     color: var(--primary-yellow);
-    
+
     text-decoration: none;
-  }
+}
 
 .btn-dark {
     background-color: var(--primary-dark);
@@ -155,11 +156,13 @@
     max-width: 300px;
     text-align: start;
 }
-.work-custom-button-margin{
+
+.work-custom-button-margin {
     margin-right: auto;
 }
 
-.nav-search-btn:hover, .nav-search-btn:focus {
+.nav-search-btn:hover,
+.nav-search-btn:focus {
     background-color: var(--primary-dark-blue);
     color: var(--primary-white);
     border-color: var(--primary-white);
@@ -188,12 +191,14 @@
 .nav-link {
     color: var(--primary-white);
 }
+
 .nav-link.active {
     color: var(--primary-yellow) !important;
     font-weight: 600;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--primary-yellow);
 }
 
@@ -299,7 +304,7 @@
     }
 }
 
-.bg-card-dark-blue {
+/* .bg-card-dark-blue {
 
     background-color: var(--primary-dark-blue);
 
@@ -348,49 +353,141 @@
             }
         }
     }
+} */
+
+.fixed-height-line-limit-2 {
+    line-height: 1.2em;
+    height: 2.4rem;
+    overflow: hidden;
+
+    /* add the 'text-overflow: ellipsis' effect */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
+
+.bg-card-dark-blue {
+
+    background-color: var(--primary-dark-blue);
+
+    .edit-delete-icons {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+    }
+
+    .card-body {
+
+        .card-title {
+            color: var(--primary-white);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .card-text {
+            color: var(--secondary-dark);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        div {
+
+            div:nth-of-type(1) {
+
+                i {
+                    color: var(--primary-white);
+                }
+            }
+
+            div:nth-of-type(2) {
+
+                i:nth-of-type(1) {
+                    color: var(--secondary-yellow);
+                }
+
+                i:nth-of-type(2) {
+                    color: var(--primary-green);
+                }
+
+                span:nth-of-type(1) {
+                    font-weight: 600;
+                    font-size: 0.75rem;
+                    color: var(--secondary-yellow);
+                }
+
+                span:nth-of-type(2) {
+                    font-weight: 600;
+                    font-size: 0.75rem;
+                    color: var(--primary-green);
+                }
+            }
+        }
+    }
+}
+
+
+
 /* This is the CSS for the offcanvas component. It sets the background color and text color for the offcanvas component. */
-.bg-offcanvas-blue{
+.bg-offcanvas-blue {
     background-color: var(--offcanvas-blue);
 }
-.bg-offcanvas-selection-blue{
+
+.bg-offcanvas-selection-blue {
     background-color: var(--offcanvas-selection-blue);
 }
+
 .offcanvas-body a:hover {
-    background-color: var(--offcanvas-selection-blue); /* blue background on hover */
+    background-color: var(--offcanvas-selection-blue);
+    /* blue background on hover */
     border-radius: 5px;
-    color: #fff; /* white text on hover */
+    color: #fff;
+    /* white text on hover */
 }
+
 .offcanvas-body li {
-    margin-bottom: 0.75rem; /* Adjust as needed */
-  }
-.bg-subtitle-orange{
+    margin-bottom: 0.75rem;
+    /* Adjust as needed */
+}
+
+.bg-subtitle-orange {
     background-color: var(--subtitle-orange);
 }
-.bg-dark-background-blue{
+
+.bg-dark-background-blue {
     background-color: var(--dark-background-blue);
 }
-.bg-gradient-blue {    
+
+.bg-gradient-blue {
     background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
 }
-.custom-card-border{
+
+.custom-card-border {
     border: none;
-    box-shadow: none; /* Or adjust to be more even */
+    box-shadow: none;
+    /* Or adjust to be more even */
 }
+
 .bg-updated-gradient-blue {
-    background: #2854AB; /* Fallback color */
-    background: linear-gradient(
-      200deg,
-      rgba(40, 84, 171, 1) 0%,     /* Starting blue */
-      rgba(25, 57, 133, 1) 44%,    /* Midpoint darker blue */
-      rgba(6, 10, 20, 1) 100%      /* Deep dark end */
-    );
-}  
+    background: #2854AB;
+    /* Fallback color */
+    background: linear-gradient(200deg,
+            rgba(40, 84, 171, 1) 0%,
+            /* Starting blue */
+            rgba(25, 57, 133, 1) 44%,
+            /* Midpoint darker blue */
+            rgba(6, 10, 20, 1) 100%
+            /* Deep dark end */
+        );
+}
 
 .custom-card-width {
     width: 450px;
-    max-width: 90%; /* Responsive fallback */
-  }
+    max-width: 90%;
+    /* Responsive fallback */
+}
 
 .modal-content {
     background-color: var(--primary-dark);
@@ -410,72 +507,90 @@
         border-top: none;
     }
 }
-#navbar{
+
+#navbar {
     background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
     width: 100%;
 }
-body nav{
+
+body nav {
     padding: 1rem 2rem 1rem 2rem;
 }
+
 .custom-nav-padding {
     padding-left: 1.5rem;
-    padding-right: 1.5rem;/* Responsive fallback */
+    padding-right: 1.5rem;
+    /* Responsive fallback */
 }
-body nav div button i{
+
+body nav div button i {
     font-size: 1.5rem;
 }
-.custom-form-css{
+
+.custom-form-css {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
 }
+
 /* Default order on small screens (swapped) */
 .first {
     order: 1;
 }
+
 .second {
     order: 2;
 }
-body nav div:last-of-type{
+
+body nav div:last-of-type {
     gap: 1rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .first {
         order: 2;
     }
+
     .second {
         order: 1;
     }
+
     .custom-nav-padding {
-        padding: 0;/* Responsive fallback */
+        padding: 0;
+        /* Responsive fallback */
     }
-    .custom-form-css{
+
+    .custom-form-css {
         display: flex;
         flex-direction: column;
     }
+
     #navbar {
-    background-image: none;        
+        background-image: none;
     }
-    body nav{
+
+    body nav {
         display: flex;
         flex-direction: column;
         background-color: none;
     }
-    body nav div{
+
+    body nav div {
         background-image: linear-gradient(to right, var(--secondary-blue), var(--secondary-dark-blue), var(--primary-black));
-        width: 100%;        
+        width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 2rem 0.5rem 2rem;
         align-items: center;
     }
-    body nav div button i{
+
+    body nav div button i {
         font-size: 2rem;
     }
-    body nav div:last-of-type{
+
+    body nav div:last-of-type {
         display: flex;
         margin-top: 1rem;
         justify-content: center;
@@ -485,27 +600,33 @@ body nav div:last-of-type{
         width: fit-content;
         gap: 0rem;
     }
-    body nav div:last-of-type p{
+
+    body nav div:last-of-type p {
         color: var(--primary-dark);
     }
-    #overviewComponets{
+
+    #overviewComponets {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #overviewCards{
+
+    #overviewCards {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .custom-btn-font {
         font-size: 0.86rem;
-      }
+    }
+
     .line-clamp-2 {
         -webkit-line-clamp: 8;
-      }
-    .work-custom-button-margin{
+    }
+
+    .work-custom-button-margin {
         margin-right: 0.3rem;
     }
 }
