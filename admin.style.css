@@ -29,6 +29,14 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.placeholder-44::placeholder {
+    color: rgba(0, 0, 0, 0.44); /* black with 44% opacity */
+  }
+
+.reset-on-focus:focus {
+    border: 2px solid #00d2ff !important;
+    outline: none;
+  }
 
 /* Default styles for desktop */
 .custom-btn-font {
@@ -469,7 +477,7 @@ body nav div:last-of-type{
         width: 100%;        
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem 2rem 0.5rem 2rem;
+        padding: 0.5rem 0.8rem 0.5rem 0.8rem;
         align-items: center;
     }
     body nav div button i{
