@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,529 +11,770 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="admin.style.css">
 </head>
-<body class="bg-dark-background-blue">
-    <div class="container-fluid p-0 m-0">
-           <!-- nav-bar -->
-            <div id="navbar" class="">
-                <nav class="navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center custom-nav-padding">
-                    <!-- Left section -->
-                    <div class="d-flex align-items-center gap-3">
-                        <!-- Button with icon triggers offcanvas -->
-                        <button class="btn" type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasWithBothOptions"
-                                aria-controls="offcanvasWithBothOptions">
-                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                        </button>
-                        <p class="mb-0 text-white">SubZone Admin</p>                     
-                    </div>
 
-                    <!-- Right section -->
-                    <div class="d-flex align-items-center">
-                        <p class="first mb-0 text-white">Hi there Sashin!</p>
-                        <a class="second navbar-brand p-0" href="#">
-                            <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle border border-3 border-white" alt="" style="max-width: 3.45rem; height:3.45rem; object-fit: cover;">
-                        </a>
-                    </div>
-                </nav>
-            </div>
-            <!-- nav-bar -->
-            <!-- Offcanvas component -->
-            <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="max-width: 300px;">
-                <div class="offcanvas-header">
+<body class="bg-dark-background-blue">
+
+    <div class="container-fluid p-0 m-0">
+
+        <!-- nav-bar -->
+        <div id="navbar" class="">
+            <nav
+                class="navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center custom-nav-padding">
+                <!-- Left section -->
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Button with icon triggers offcanvas -->
+                    <button class="btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </button>
+                    <p class="mb-0 text-white">SubZone Admin</p>
+                </div>
+
+                <!-- Right section -->
+                <div class="d-flex align-items-center">
+                    <p class="first mb-0 text-white">Hi there Sashin!</p>
+                    <a class="second navbar-brand p-0" href="#">
+                        <img src="images/interstellar-55425f10ca52c.jpg"
+                            class="rounded-circle border border-3 border-white" alt=""
+                            style="max-width: 3.45rem; height:3.45rem; object-fit: cover;">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- nav-bar -->
+
+        <!-- Offcanvas component -->
+        <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="max-width: 300px;">
+            <div class="offcanvas-header">
                 <h5 class="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">Dashboard</h5>
-                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-gauge me-2 fa-lg" style="color: #ffffff;"></i>Overview</a></li>
-                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-briefcase me-2 fa-lg" style="color: #ffffff;"></i>Your Work</a></li>
-                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-bell me-2 fa-lg" style="color: #ffffff;"></i>Requests</a></li>
-                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-regular fa-thumbs-up me-2 fa-lg" style="color: #ffffff;"></i>Subtitle Approval</a></li>
-                        <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i class="fa-solid fa-puzzle-piece me-2 fa-lg" style="color: #ffffff;"></i>New Subtitle</a></li>
-                    </ul>
-                </div>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
-            <!-- Offcanvas component -->
-             <div class="container-sm d-flex flex-column align-items-center p-0">
-                <!--Overview-->
-                <div id="overview" class="w-100 px-4 my-4">
-                    <div id="overviewComponents" class="d-flex flex-column align-items-start">
-                        <h2 class="text-white fs-5 mb-3" >Overview</h2>
-                      
-                        <!-- Flex container -->
-                        <div id="overviewCards" class="d-flex w-100 flex-wrap gap-4">
-                            <!-- Card 1 -->
-                            <div class="card bg-subtitle-orange text-white d-flex flex-column justify-content-between rounded" style="width: 100%; max-width: 300px; height: auto;">
-                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                    <div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                                class="fa-solid fa-gauge me-2 fa-lg" style="color: #ffffff;"></i>Overview</a></li>
+                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                                class="fa-solid fa-briefcase me-2 fa-lg" style="color: #ffffff;"></i>Your Work</a></li>
+                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                                class="fa-solid fa-bell me-2 fa-lg" style="color: #ffffff;"></i>Requests</a></li>
+                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                                class="fa-regular fa-thumbs-up me-2 fa-lg" style="color: #ffffff;"></i>Subtitle
+                            Approval</a></li>
+                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                                class="fa-solid fa-puzzle-piece me-2 fa-lg" style="color: #ffffff;"></i>New Subtitle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Offcanvas component -->
+
+        <div class="container-sm d-flex flex-column align-items-center p-0">
+
+            <!--Overview-->
+            <div id="overview" class="w-100 px-4 my-4">
+                <div id="overviewComponents" class="d-flex flex-column align-items-start">
+                    <h2 class="text-white fs-5 mb-3">Overview</h2>
+
+                    <!-- Flex container -->
+                    <div id="overviewCards" class="d-flex w-100 flex-wrap gap-4">
+                        <!-- Card 1 -->
+                        <div class="card bg-subtitle-orange text-white d-flex flex-column justify-content-between rounded"
+                            style="width: 100%; max-width: 300px; height: auto;">
+                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                <div>
                                     <p class="fs-1 fw-bold mb-2">251</p>
                                     <p class="fs-6 fw-medium">Total Subtitles</p>
-                                    </div>
-                                    <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #e9f32c;"></i>
                                 </div>
-                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #BA760A;">                                
-                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                                </div>
+                                <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #e9f32c;"></i>
                             </div>
-                           <!-- Card 2 -->
-                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#F012BF ; width: 100%; max-width: 300px; height: auto;">
-                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                    <div>
+                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #BA760A;">
+                                <a class="text-white text-decoration-none" href="#">More info<i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-2"
+                                        style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card text-white d-flex flex-column justify-content-between rounded"
+                            style="background-color:#F012BF ; width: 100%; max-width: 300px; height: auto;">
+                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                <div>
                                     <p class="fs-1 fw-bold mb-2">251</p>
                                     <p class="fs-6 fw-medium">Total Requests</p>
-                                    </div>
-                                    <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #FF98E7;"></i>
                                 </div>
-                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #D313AA;">                             
-                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                                </div>
+                                <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #FF98E7;"></i>
                             </div>
-                            <!-- Card 3 -->
-                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#00A65A ; width: 100%; max-width: 300px; height: auto;">
-                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                    <div>
+                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #D313AA;">
+                                <a class="text-white text-decoration-none" href="#">More info<i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-2"
+                                        style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card text-white d-flex flex-column justify-content-between rounded"
+                            style="background-color:#00A65A ; width: 100%; max-width: 300px; height: auto;">
+                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                <div>
                                     <p class="fs-1 fw-bold mb-2">251</p>
                                     <p class="fs-6 fw-medium">Subtitles Done by You</p>
-                                    </div>
-                                    <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #32815E;"></i>
                                 </div>
-                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #00974E;">                             
-                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                                </div>
-                            </div> 
-                            <!-- Card 4 -->
-                           <div class="card text-white d-flex flex-column justify-content-between rounded" style="background-color:#0073B6 ; width: 100%; max-width: 300px; height: auto;">
-                                <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
-                                    <div>
+                                <i class="fa-regular fa-closed-captioning" style="font-size: 60px; color: #32815E;"></i>
+                            </div>
+                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #00974E;">
+                                <a class="text-white text-decoration-none" href="#">More info<i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-2"
+                                        style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card text-white d-flex flex-column justify-content-between rounded"
+                            style="background-color:#0073B6 ; width: 100%; max-width: 300px; height: auto;">
+                            <div class="d-flex justify-content-between px-4 pt-4 align-items-center">
+                                <div>
                                     <p class="fs-1 fw-bold mb-2">251</p>
                                     <p class="fs-6 fw-medium">Requests Done by You</p>
-                                    </div>
-                                    <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #00609C;"></i>
                                 </div>
-                                <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #0067A3;">                             
-                                        <a class="text-white text-decoration-none" href="#">More info<i class="fa-solid fa-arrow-up-right-from-square ms-2" style="color: #ffffff;"></i></a>                                
-                                </div>
-                            </div>                  
+                                <i class="fa-solid fa-code-pull-request" style="font-size: 60px; color: #00609C;"></i>
+                            </div>
+                            <div class="text-center py-2 mt-auto rounded-bottom" style="background-color: #0067A3;">
+                                <a class="text-white text-decoration-none" href="#">More info<i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-2"
+                                        style="color: #ffffff;"></i></a>
+                            </div>
                         </div>
-                        
                     </div>
-    
+
                 </div>
-                <!--YourWork-->
-                <div id="yourWork" class="w-100 px-4 my-4">
-                    <div class="container p-0 d-flex flex-column align-items-start">
-                        
-                        <h2 class="text-white fs-5 mb-3" >Your Work</h2>
-                        <!-- Flex container -->
-                        <div class="col-12">
-                            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 row-cols-xxl-6 g-3">
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
+
+            </div>
+
+            <!--YourWork-->
+            <div id="yourWork" class="w-100 px-4 my-4">
+
+                <div class="container p-0 d-flex flex-column align-items-start">
+
+                    <h2 class="text-white fs-5 mb-3">Your Work</h2>
+                    <!-- Flex container -->
+                    <div class="col-12">
+                        <div
+                            class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 row-cols-xxl-6 g-3">
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
                                             </div>
-            
-                                        </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
                                             </div>
-            
                                         </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->
-                                
-                                <!--movie card element--> 
-                                <div class="col">
-                                    <div class="card border-0 bg-card-dark-blue">
-            
-                                        <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
-                                            alt="...">
-                                        <div class="edit-delete-icons">
-                                            <button class="btn btn-sm btn-light rounded-circle"><i class="fa-solid fa-pen"></i></button>
-                                            <button class="btn btn-sm btn-danger rounded-circle"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
-            
-                                        <div class="card-body rounded-bottom">
-            
-                                            <h6 class="card-title fw-semibold fixed-height-line-limit-2">
-                                                Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time (2010)
-                                            </h6>
-            
-                                            <p class="card-text">14 January 2023</p>
-            
-                                            <div class="d-flex justify-content-between">
-            
-                                                <div>
-                                                    <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon" role="button"
-                                                        data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
-                                                        onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
-                                                    </i>
-                                                </div>
-            
-                                                <div>
-                                                    <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
-                                                    <i class="fa-solid fa-clock me-1"></i><span>180</span>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                    </div>            
-                                </div>
-                                <!--movie card element-->       
-            
-                            </div>
-                        </div>
-                    
-                </div>
-                <!--YourWork-->
-                <div id="requests" class="w-100 my-4">
-                    <div class="container p-0 d-flex flex-column align-items-start gap-4">
-                        <h2 class="text-white fs-5 m-0" >Requests</h2>
-                        <div class="d-flex gap-2">
-                            <button class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark as all read</button>
-                            <button class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel all requests</button>
-                        </div>
-                        <!-- Flex container requests-->
-                         <div class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="d-flex">
-                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                                    <div class="d-flex flex-column ms-3 justify-content-center">
-                                        <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                        <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+
                                     </div>
                                 </div>
-                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them</h3>
                             </div>
-                            <div class="d-flex">
-                                <button class="btn btn-link p-0 border-0 bg-transparent me-3">
-                                  <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
-                                </button>
-                                <button class="btn btn-link p-0 border-0 bg-transparent">
-                                  <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
-                                </button>
-                              </div>                    
-                        </div>
-                        <!-- Flex container requests-->
-                        <div class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="d-flex">
-                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                                    <div class="d-flex flex-column ms-3 justify-content-center">
-                                        <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                        <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+                            <!--movie card element-->
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body rounded-bottom">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them</h3>
                             </div>
-                            <div class="d-flex">
-                                <button class="btn btn-link p-0 border-0 bg-transparent me-3">
-                                  <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
-                                </button>
-                                <button class="btn btn-link p-0 border-0 bg-transparent">
-                                  <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
-                                </button>
-                              </div>                    
-                        </div>
-                        <div class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
-                            <div class="d-flex flex-column justify-content-center">
-                                <div class="d-flex">
-                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                                    <div class="d-flex flex-column ms-3 justify-content-center">
-                                        <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                        <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+                            <!--movie card element-->
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body rounded-bottom">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them some lines in subtitle is missing, can you guys update them</h3>
                             </div>
-                            <div class="d-flex">
-                                <button class="btn btn-link p-0 border-0 bg-transparent me-3">
-                                  <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
-                                </button>
-                                <button class="btn btn-link p-0 border-0 bg-transparent">
-                                  <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
-                                </button>
-                            </div>                    
+                            <!--movie card element-->
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body rounded-bottom">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--movie card element-->
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body rounded-bottom">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--movie card element-->
+
+                            <!--movie card element-->
+                            <div class="col">
+                                <div class="card border-0 bg-card-dark-blue">
+
+                                    <img src="images/posters/prince-of-persia-the-sands-of-time.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="edit-delete-icons">
+                                        <button class="btn btn-sm btn-light rounded-circle"><i
+                                                class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-sm btn-danger rounded-circle"><i
+                                                class="fa-solid fa-trash"></i></button>
+                                    </div>
+
+                                    <div class="card-body rounded-bottom">
+
+                                        <p class="card-title fixed-height-line-limit-2">
+                                            Prince Of Persia The Sands Of Time (2010)Prince Of Persia The Sands Of Time
+                                            (2010)
+                                        </p>
+
+                                        <p class="card-text">14 January 2023</p>
+
+                                        <div class="d-flex justify-content-between">
+
+                                            <div>
+                                                <i class="fa-solid fa-circle-play fa-fade fa-xl card-play-icon"
+                                                    role="button" data-video-id="mRDE5l-PJYY"
+                                                    onmouseover="cardPlayIconHover(this, true);"
+                                                    onmouseout="cardPlayIconHover(this, false);"
+                                                    onclick="playTrailer(this);">
+                                                </i>
+                                            </div>
+
+                                            <div>
+                                                <i class="fa-solid fa-star me-1"></i><span class="me-2">7.5</span>
+                                                <i class="fa-solid fa-clock me-1"></i><span>180</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--movie card element-->
+
                         </div>
+                    </div>
+
                 </div>
+            </div>
+            <!--YourWork-->
+
+            <!-- requests -->
+            <div id="requests" class="w-100 px-4 my-4">
+
+                <div class="container p-0 d-flex flex-column align-items-start gap-4">
+
+                    <h5 class="text-white m-0">Requests</h5>
+
+                    <div class="d-flex gap-2">
+                        <button
+                            class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
+                            as all read</button>
+                        <button
+                            class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
+                            all requests</button>
+                    </div>
+
+                    <!-- Flex container requests-->
+                    <!-- <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="d-flex">
+                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                    style="max-width: 70px; height:70px; object-fit: cover;">
+                                <div class="d-flex flex-column ms-3 justify-content-center">
+                                    <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
+                                    <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can
+                                you guys update them some lines in subtitle is missing, can you guys update them
+                                some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                update them</h3>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-link p-0 border-0 bg-transparent me-3">
+                                <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
+                            </button>
+                            <button class="btn btn-link p-0 border-0 bg-transparent">
+                                <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
+
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="d-flex">
+                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                    style="max-width: 70px; height:70px; object-fit: cover;">
+                                <div class="d-flex flex-column ms-3 justify-content-center">
+                                    <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
+                                    <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can
+                                you guys update them some lines in subtitle is missing, can you guys update them
+                                some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                update them</h3>
+                        </div>
+
+                        <div class="d-flex">
+                            <button class="btn btn-link p-0 border-0 bg-transparent me-3">
+                                <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
+                            </button>
+                            <button class="btn btn-link p-0 border-0 bg-transparent">
+                                <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-5">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="d-flex">
+                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                    style="max-width: 70px; height:70px; object-fit: cover;">
+                                <div class="d-flex flex-column ms-3 justify-content-center">
+                                    <p class="text-white m-0 mb-1" style="font-size: 1.07rem;">Sashin Demantha</p>
+                                    <p class="text-white m-0 fw-light" style="font-size: 0.9rem;">10 May 2025</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2">some lines in subtitle is missing, can
+                                you guys update them some lines in subtitle is missing, can you guys update them
+                                some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                update them</h3>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-link p-0 border-0 bg-transparent me-3">
+                                <img src="icons/ic_outline-uncheck.svg" style="width: 2.8rem;" alt="Uncheck">
+                            </button>
+                            <button class="btn btn-link p-0 border-0 bg-transparent">
+                                <img src="icons/ic_outline-check.svg" style="width: 2.8rem;" alt="Check">
+                            </button>
+                        </div>
+                    </div> -->
+
+                    <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        <div class="card border-0 bg-dark-req-background">
+                            <div class="card-body">
+
+                                <div class="d-flex align-items-center mb-3">
+
+                                    <img src="images/interstellar-55425f10ca52c.jpg" alt=""
+                                        class="rounded-circle object-fit-cover" width="70px" style="aspect-ratio: 1;">
+
+                                    <div class="ms-3">
+                                        <h5 class="card-title text-white">Sashin Deemantha</h5>
+                                        <h6 class="card-subtitle mb-2 text-white fw-light">10 May 2025</h6>
+                                    </div>
+
+                                </div>
+                                <p class="card-text text-white">some lines in subtitle is missing, can
+                                    you guys update them some lines in subtitle is missing, can you guys update them
+                                    some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                    is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                    update them.
+                                </p>
+
+                                <button class="btn btn-outline-danger rounded-circle me-2"
+                                    style="padding: 7px 13px 7px 13px;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+
+                                <button class="btn btn-outline-success rounded-circle"
+                                    style="padding-top: 7px; padding-bottom: 7px;">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        <div class="card border-0 bg-dark-req-background">
+                            <div class="card-body">
+
+                                <div class="d-flex align-items-center mb-3">
+
+                                    <img src="images/interstellar-55425f10ca52c.jpg" alt=""
+                                        class="rounded-circle object-fit-cover" width="70px" style="aspect-ratio: 1;">
+
+                                    <div class="ms-3">
+                                        <h5 class="card-title text-white">Sashin Deemantha</h5>
+                                        <h6 class="card-subtitle mb-2 text-white fw-light">10 May 2025</h6>
+                                    </div>
+
+                                </div>
+                                <p class="card-text text-white">some lines in subtitle is missing, can
+                                    you guys update them some lines in subtitle is missing, can you guys update them
+                                    some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                    is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                    update them.
+                                </p>
+
+                                <button class="btn btn-outline-danger rounded-circle me-2"
+                                    style="padding: 7px 13px 7px 13px;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+
+                                <button class="btn btn-outline-success rounded-circle"
+                                    style="padding-top: 7px; padding-bottom: 7px;">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-dark-req-background d-flex flex-wrap justify-content-between w-100 rounded-4 py-4 px-4">
+                        <div class="card border-0 bg-dark-req-background">
+                            <div class="card-body">
+
+                                <div class="d-flex align-items-center mb-3">
+
+                                    <img src="images/interstellar-55425f10ca52c.jpg" alt=""
+                                        class="rounded-circle object-fit-cover" width="70px" style="aspect-ratio: 1;">
+
+                                    <div class="ms-3">
+                                        <h5 class="card-title text-white">Sashin Deemantha</h5>
+                                        <h6 class="card-subtitle mb-2 text-white fw-light">10 May 2025</h6>
+                                    </div>
+
+                                </div>
+                                <p class="card-text text-white">some lines in subtitle is missing, can
+                                    you guys update them some lines in subtitle is missing, can you guys update them
+                                    some lines in subtitle is missing, can you guys update them some lines in subtitle
+                                    is missing, can you guys update them some lines in subtitle is missing, can you guys
+                                    update them.
+                                </p>
+
+                                <button class="btn btn-outline-danger rounded-circle me-2"
+                                    style="padding: 7px 13px 7px 13px;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+
+                                <button class="btn btn-outline-success rounded-circle"
+                                    style="padding-top: 7px; padding-bottom: 7px;">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Flex container requests-->
+
+
+                </div>
+
                 <!--Subtitle file approval-->
                 <div id="requests" class="w-100 my-4">
                     <div class="container p-0 d-flex flex-column align-items-end gap-4">
                         <h2 class="text-white fs-5 m-0 text-end">Subtitle file approval</h2>
                         <div class="d-flex gap-2">
-                            <button class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark as all read</button>
-                            <button class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel all requests</button>
+                            <button
+                                class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Mark
+                                as all read</button>
+                            <button
+                                class="btn border border-white rounded-pill px-4 py-3 bg-transparent text-white custom-btn-font">Cancel
+                                all requests</button>
                         </div>
                         <!-- Flex container requests-->
-                        <form method="post" action="/submit-endpoint" class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                        <form method="post" action="/submit-endpoint"
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
-                              <!-- New List Selector -->
-                              <select name="status" class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font" style="color: black; background-color: #E0C422; width: auto;">
-                                <option value="" disabled selected>Set value</option>
-                                <option value="approved">Approved</option>
-                                <option value="rejected">Rejected</option>
-                                <option value="pending">Pending</option>
-                              </select>
-                          
-                              <!-- Confirm Button as Submit -->
-                              <button type="submit" class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font" style="background-color: #1368F5;">
-                                Confirm
-                              </button>
-                              <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
+                                <!-- New List Selector -->
+                                <select name="status"
+                                    class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font"
+                                    style="color: black; background-color: #E0C422; width: auto;">
+                                    <option value="" disabled selected>Set value</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="pending">Pending</option>
+                                </select>
+
+                                <!-- Confirm Button as Submit -->
+                                <button type="submit"
+                                    class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font"
+                                    style="background-color: #1368F5;">
+                                    Confirm
+                                </button>
+                                <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
                             </div>
                             <div class="second d-flex flex-column justify-content-center align-items-end">
-                              <div class="d-flex">
-                                <div class="d-flex justify-content-center flex-column me-3 align-items-end">
-                                  <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                  <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10 May 2025</p>
+                                <div class="d-flex">
+                                    <div class="d-flex justify-content-center flex-column me-3 align-items-end">
+                                        <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin
+                                            Demantha</p>
+                                        <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10
+                                            May 2025</p>
+                                    </div>
+                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                        style="max-width: 70px; height:70px; object-fit: cover;">
                                 </div>
-                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                              </div>
-                              <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train Your Dragon 2 (2014) Sinhala Subttiles</h3>
-                            </div>                    
-                          </form>
+                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train
+                                    Your Dragon 2 (2014) Sinhala Subttiles</h3>
+                            </div>
+                        </form>
                         <!-- Flex container requests-->
                         <!-- Flex container requests-->
-                        <form method="post" action="/submit-endpoint" class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                        <form method="post" action="/submit-endpoint"
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
-                              <!-- New List Selector -->
-                              <select name="status" class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font" style="color: black; background-color: #E0C422; width: auto;">
-                                <option value="" disabled selected>Set value</option>
-                                <option value="approved">Approved</option>
-                                <option value="rejected">Rejected</option>
-                                <option value="pending">Pending</option>
-                              </select>
-                          
-                              <!-- Confirm Button as Submit -->
-                              <button type="submit" class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font" style="background-color: #1368F5;">
-                                Confirm
-                              </button>
-                              <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
+                                <!-- New List Selector -->
+                                <select name="status"
+                                    class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font"
+                                    style="color: black; background-color: #E0C422; width: auto;">
+                                    <option value="" disabled selected>Set value</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="pending">Pending</option>
+                                </select>
+
+                                <!-- Confirm Button as Submit -->
+                                <button type="submit"
+                                    class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font"
+                                    style="background-color: #1368F5;">
+                                    Confirm
+                                </button>
+                                <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
                             </div>
                             <div class="second d-flex flex-column justify-content-center align-items-end">
-                              <div class="d-flex">
-                                <div class="d-flex justify-content-center flex-column me-3 align-items-end">
-                                  <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                  <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10 May 2025</p>
+                                <div class="d-flex">
+                                    <div class="d-flex justify-content-center flex-column me-3 align-items-end">
+                                        <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin
+                                            Demantha</p>
+                                        <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10
+                                            May 2025</p>
+                                    </div>
+                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                        style="max-width: 70px; height:70px; object-fit: cover;">
                                 </div>
-                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                              </div>
-                              <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train Your Dragon 2 (2014) Sinhala Subttiles</h3>
-                            </div>                    
-                          </form>
+                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train
+                                    Your Dragon 2 (2014) Sinhala Subttiles</h3>
+                            </div>
+                        </form>
                         <!-- Flex container requests-->
                         <!-- Flex container requests-->
-                        <form method="post" action="/submit-endpoint" class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
+                        <form method="post" action="/submit-endpoint"
+                            class="custom-form-css bg-dark-req-background w-100 rounded-4 py-4 px-5">
                             <div class="first d-flex gap-3 mb-3 align-items-center flex-wrap justify-content-start">
-                              <!-- New List Selector -->
-                              <select name="status" class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font" style="color: black; background-color: #E0C422; width: auto;">
-                                <option value="" disabled selected>Set value</option>
-                                <option value="approved">Approved</option>
-                                <option value="rejected">Rejected</option>
-                                <option value="pending">Pending</option>
-                              </select>
-                          
-                              <!-- Confirm Button as Submit -->
-                              <button type="submit" class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font" style="background-color: #1368F5;">
-                                Confirm
-                              </button>
-                              <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
+                                <!-- New List Selector -->
+                                <select name="status"
+                                    class="form-select text-black border-0 rounded-pill px-4 py-3 custom-btn-font"
+                                    style="color: black; background-color: #E0C422; width: auto;">
+                                    <option value="" disabled selected>Set value</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="pending">Pending</option>
+                                </select>
+
+                                <!-- Confirm Button as Submit -->
+                                <button type="submit"
+                                    class="btn rounded-pill border-0 px-4 py-3 text-white custom-btn-font"
+                                    style="background-color: #1368F5;">
+                                    Confirm
+                                </button>
+                                <i class="fa-solid fa-file-arrow-down" style="font-size: 3.0rem; color: #4bb8ff;"></i>
                             </div>
                             <div class="second d-flex flex-column justify-content-center align-items-end">
-                              <div class="d-flex">
-                                <div class="d-flex justify-content-center flex-column me-3 align-items-end">
-                                  <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin Demantha</p>
-                                  <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10 May 2025</p>
+                                <div class="d-flex">
+                                    <div class="d-flex justify-content-center flex-column me-3 align-items-end">
+                                        <p class="text-white m-0 mb-1 text-end" style="font-size: 1.07rem;">Sashin
+                                            Demantha</p>
+                                        <p class="text-white m-0 fw-light text-end" style="font-size: 0.9rem;">10
+                                            May 2025</p>
+                                    </div>
+                                    <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt=""
+                                        style="max-width: 70px; height:70px; object-fit: cover;">
                                 </div>
-                                <img src="images/interstellar-55425f10ca52c.jpg" class="rounded-circle" alt="" style="max-width: 70px; height:70px; object-fit: cover;">
-                              </div>
-                              <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train Your Dragon 2 (2014) Sinhala Subttiles</h3>
-                            </div>                    
-                          </form>                          
+                                <h3 class="text-white fs-5 p-0 mt-3 line-clamp-2 text-end fw-light">How to Train
+                                    Your Dragon 2 (2014) Sinhala Subttiles</h3>
+                            </div>
+                        </form>
                         <!-- Flex container requests-->
                     </div>
+                    
                     <div id="requests" class="w-100 my-4">
                         <div class="container p-0 d-flex flex-column gap-4">
                             <h2 class="text-white fs-5 m-0">Contribute your finest work</h2>
@@ -572,17 +814,93 @@
                                 
                             </form>
                         </div>
-                    </div>    
-            
+                    </div>
 
+                </div>
 
+            </div>
+            <!-- requests -->
+        </div>
 
     </div>
-    
+
+
+
+    <!-- Youtube Trailer Modal -->
+    <div class="modal fade" id="trailerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="trailerModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" aria-label="Close"
+                            onclick="hideTrailerModal();"></i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body p-0" style="aspect-ratio: 16/9;">
+
+                    <div id="ytPlayer"></div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <a href="#" class="link-accent-blue">Download Subtitles<i
+                            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Youtube Trailer Modal -->
+
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <i class="fa-solid fa-triangle-exclamation fa-fade text-accent-blue display-5 mb-3"></i>
+                    <h5>Something went wrong.</h5>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-accent-blue rounded-pill">Report</button>
+                    <button type="button" class="btn btn-outline-light rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Error Modal -->
 
 
     <script src="bootstrap.bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
+
 </body>
+
 </html>

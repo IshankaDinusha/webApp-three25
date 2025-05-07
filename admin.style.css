@@ -109,6 +109,17 @@
     color: var(--primary-white);
 }
 
+.btn-outline-success {
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--primary-dark);
+}
+
 .btn-primary {
     border-color: var(--primary-blue);
     background-color: var(--primary-blue);
@@ -267,105 +278,9 @@
     line-clamp: 3;
 }
 
-.bg-card-blue {
-
-    background-image: linear-gradient(var(--primary-yellow), var(--accent-blue));
-
-    .card-body {
-
-        .card-title {
-            color: var(--primary-white);
-        }
-
-        .card-text {
-            font-weight: 600;
-            font-size: small;
-            color: var(--accent-dark);
-        }
-
-        div {
-
-            div:nth-of-type(1) {
-
-                i {
-                    color: var(--primary-dark);
-                }
-            }
-
-            div:nth-of-type(2) {
-
-                i:nth-of-type(1) {
-                    color: var(--accent-dark);
-                }
-
-                i:nth-of-type(2) {
-                    color: var(--accent-dark);
-                }
-
-                span {
-                    font-weight: 600;
-                    font-size: small;
-                    color: var(--accent-dark);
-                }
-            }
-        }
-    }
-}
-
-/* .bg-card-dark-blue {
-
-    background-color: var(--primary-dark-blue);
-
-    .card-body {
-
-        .card-title {
-            color: var(--primary-white);
-        }
-
-        .card-text {
-            font-weight: 600;
-            font-size: small;
-            color: var(--secondary-dark);
-        }
-
-        div {
-
-            div:nth-of-type(1) {
-
-                i {
-                    color: var(--primary-white);
-                }
-            }
-
-            div:nth-of-type(2) {
-
-                i:nth-of-type(1) {
-                    color: var(--secondary-yellow);
-                }
-
-                i:nth-of-type(2) {
-                    color: var(--primary-green);
-                }
-
-                span:nth-of-type(1) {
-                    font-weight: 600;
-                    font-size: small;
-                    color: var(--secondary-yellow);
-                }
-
-                span:nth-of-type(2) {
-                    font-weight: 600;
-                    font-size: small;
-                    color: var(--primary-green);
-                }
-            }
-        }
-    }
-} */
-
 .fixed-height-line-limit-2 {
-    line-height: 1.2em;
-    height: 2.4rem;
+    line-height: 1.3em;
+    height: 2.6rem;
     overflow: hidden;
 
     /* add the 'text-overflow: ellipsis' effect */
