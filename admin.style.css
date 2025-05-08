@@ -500,6 +500,10 @@ body nav div:last-of-type {
     opacity: 1;
   }
 
+.custom-form-req-css{
+    padding: 0 3rem 0 3rem;
+}
+
 /* Form styles */
 label {
 display: block;
@@ -624,5 +628,8 @@ input[type="file"].custom-file-style {
 
     .work-custom-button-margin {
         margin-right: 0.3rem;
+    }
+    .custom-form-req-css{
+        padding: 0 1rem 0 1rem;
     }
 }
