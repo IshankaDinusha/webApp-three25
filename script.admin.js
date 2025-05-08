@@ -9,11 +9,11 @@ function searchActor() {
   if (actorDB.includes(input)) {
     selectedActor = input;
     result.innerHTML = `<p class="text-white custom-btn-font">✅ Actor found: <strong>${input}</strong></p>`;
-    addForm.classList.add('hidden');
+    addForm.classList.add('d-none');
   } else {
     result.innerHTML = `<p class="text-white custom-btn-font">❌ Actor not found: <strong>${input}</strong></p>`;
     document.getElementById('newActorName').value = input;
-    addForm.classList.remove('hidden');
+    addForm.classList.remove('d-none');
     selectedActor = null;
   }
 }

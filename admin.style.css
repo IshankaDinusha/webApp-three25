@@ -501,18 +501,18 @@ body nav div:last-of-type {
   }
 
 /* Form styles */
-  label {
-    display: block;
-    margin-top: 10px;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-  }
-  .hidden {
-    display: none;
-  }
+label {
+display: block;
+margin-top: 10px;
+}
+input, textarea {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+}
+.hidden {
+display: none;
+}
 /* Choose file cs */
 input[type="file"].custom-file-style {
     background-color: #487B99;
