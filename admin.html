@@ -57,16 +57,16 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                    <li onclick="showMenuItemById('menu-overview')"><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
                                 class="fa-solid fa-gauge me-2 fa-lg" style="color: #ffffff;"></i>Overview</a></li>
-                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                    <li onclick="showMenuItemById('menu-your-work')"><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
                                 class="fa-solid fa-briefcase me-2 fa-lg" style="color: #ffffff;"></i>Your Work</a></li>
-                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                    <li onclick="showMenuItemById('menu-requests')"><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
                                 class="fa-solid fa-bell me-2 fa-lg" style="color: #ffffff;"></i>Requests</a></li>
-                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                    <li onclick="showMenuItemById('menu-approval')"><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
                                 class="fa-regular fa-thumbs-up me-2 fa-lg" style="color: #ffffff;"></i>Subtitle
                             Approval</a></li>
-                    <li><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
+                    <li onclick="showMenuItemById('menu-new-subtitle')"><a href="#" class="text-decoration-none text-white d-block px-3 py-2"><i
                                 class="fa-solid fa-puzzle-piece me-2 fa-lg" style="color: #ffffff;"></i>New Subtitle</a>
                     </li>
                 </ul>
@@ -659,7 +659,7 @@
                 </div>
 
                 <!--Subtitle file approval-->
-                <div id="requests" class="w-100 my-4">
+                <div id="approval" class="w-100 my-4">
                     <div class="container p-0 d-flex flex-column align-items-end gap-4">
                         <h2 class="text-white fs-5 m-0 text-end">Subtitle file approval</h2>
                         <div class="d-flex gap-2">
@@ -786,7 +786,7 @@
                         <!-- Flex container requests-->
                     </div>
                     
-                    <div id="requests" class="w-100 my-4">
+                    <div id="subfile" class="w-100 my-4">
                         <div class="container p-0 d-flex flex-column gap-4">
                             <h2 class="text-white fs-5 m-0">Contribute your finest work</h2>
                             <form action="" class="bg-dark-req-background w-100 rounded-4 py-4 custom-form-req-css d-flex flex-column gap-4">
@@ -864,7 +864,10 @@
                                       
                                     </div>
                                   </div>
-                                
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <button class="rounded-pill border-0 w-50 px-4 py-3" style="background-color: #E82C2C;">Cancel <i class="fa-solid fa-xmark ms-1" style="color: #000000;"></i></button>
+                                    <button class="rounded-pill border-0 w-50 px-4 py-3">Confirm</button>
+                                </div>                                
                             </form>
                         </div>
                     </div>

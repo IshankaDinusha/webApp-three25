@@ -120,3 +120,73 @@ const dropZone = document.getElementById('dropZone');
       alert(`File "${file.name}" is ready to be uploaded.`);
       // Upload logic can be added here.
     }
+  
+    //offcanvas js
+
+    // Initialize the offcanvas menu to show "Overview" by default
+    document.addEventListener('DOMContentLoaded', () => {
+      showMenuItemById('menu-overview');
+    });
+    
+    function showMenuItemById(idToShow) {
+      const overview = document.getElementById("overview");
+      const yourWork = document.getElementById("yourWork");
+      const requests = document.getElementById("requests");
+      const approval = document.getElementById("approval");
+      const subfile = document.getElementById("subfile");
+      
+      console.log(`Showing ${idToShow}`);
+
+      switch (idToShow) {
+        case 'menu-overview':
+          overview.style.display = 'block';
+          yourWork.style.display = 'none';
+          requests.style.display = 'none';
+          approval.style.display = 'none';
+          subfile.style.display = 'none';
+          break;
+        case 'menu-your-work':
+          overview.style.display = 'none';
+          yourWork.style.display = 'block';
+          requests.style.display = 'none';
+          approval.style.display = 'none';
+          subfile.style.display = 'none';
+          break;
+        case 'menu-requests':
+          overview.style.display = 'none';
+          yourWork.style.display = 'none';
+          requests.style.display = 'block';
+          approval.style.display = 'none';
+          subfile.style.display = 'none';
+          break;
+        case 'menu-approval':
+          overview.style.display = 'none';
+          yourWork.style.display = 'none';
+          requests.style.display = 'none';
+          approval.style.display = 'block';
+          subfile.style.display = 'none';
+          break;
+        case 'menu-new-subtitle':
+          overview.style.display = 'none';
+          yourWork.style.display = 'none';
+          requests.style.display = 'none';
+          approval.style.display = 'none';
+          subfile.style.display = 'block';
+          break;
+        default:
+          overview.style.display = 'block';
+          yourWork.style.display = 'none';
+          requests.style.display = 'none';
+          approval.style.display = 'none';
+          subfile.style.display = 'none';
+          break;
+    } 
+  }
+  
+    /*// Add event listeners to the menu items
+    document.querySelectorAll('.offcanvas-menu-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const idToShow = item.getAttribute('data-target');
+        showMenuItemById(idToShow);
+      });
+    });*/
