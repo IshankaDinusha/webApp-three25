@@ -828,7 +828,8 @@
                                         <input type="text" id="actorSearch" 
                                                class="rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus"
                                                style="background-color: #487B99; color: rgba(0, 0, 0, 1);" 
-                                               placeholder="Enter actor name..." />
+                                               placeholder="Enter actor name..."
+                                               autocomplete="off" />
                                         
                                         <button type="button" onclick="searchActor()" 
                                                 class="btn btn-primary rounded-pill px-4 py-3">
@@ -840,17 +841,20 @@
                                     <div id="actorResult"></div>
                                 
                                     <div id="addActorForm" class="d-none d-flex flex-column gap-3">
-                                      <h4 class="text-white custom-btn-font">Actor not found. Add new actor:</h4>
-                                      <label for="newActorName" class="text-white custom-btn-font">Actor Name:</label>
+                                      <h4 class="text-white custom-btn-font">Actor not found. Add new actor</h4>
+                                      <label for="newActorName" class="text-white custom-btn-font">Actor Name</label>
                                       <input type="text" id="newActorName" placeholder="Enter actor name..." class="rounded-pill py-3 px-4 border-0  placeholder-44 reset-on-focus" style="background-color: #487B99; color: rgba(0, 0, 0, 1);" />
                                 
                                       
                                       <div class="d-flex flex-column gap-2">
-                                        <label for="newActorImage" class="text-white custom-btn-font">Actor Image URL:</label>
-                                        <input type="file" id="newActorImage" 
-                                               accept="image/*"
-                                               class="form-control rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus custom-file-style" 
-                                               style="background-color: #487B99; color: rgba(0, 0, 0, 1);" />
+                                        <label for="newActorImage" class="text-white custom-btn-font">Actor Image URL</label>
+                                        <div class="drop-zone w-100" id="dropZone">
+                                            <div class="upload-icon mb-3"><i class="fa-solid fa-upload fa-lg" style="color: #074b73;"></i></div>
+                                            <p class="mb-1 fw-semibold">Choose a file or drag & drop it here</p>
+                                            <p class="text-white-50">SRT file only, max size 2MB</p>
+                                            <input type="file" id="fileInput" accept=".png,.jpg,.jpeg">
+                                            <button type="button" class="btn btn-outline-light mt-3" id="browseBtn">Browse File</button>
+                                          </div>
                                       
                                         <button onclick="addNewActor()" 
                                                 class="btn btn-primary rounded-pill px-4 py-3">
