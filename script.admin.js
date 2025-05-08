@@ -128,11 +128,11 @@ const dropZone = document.getElementById('dropZone');
       showMenuItemById('menu-overview');
     });
     
-    function showMenuItemById(idToShow) {
+   function showMenuItemById(idToShow) {
       const overview = document.getElementById("overview");
       const yourWork = document.getElementById("yourWork");
       const requests = document.getElementById("requests");
-      const approval = document.getElementById("approval");
+      const approval = document.getElementById("subApproval");
       const subfile = document.getElementById("subfile");
       
       console.log(`Showing ${idToShow}`);
@@ -142,7 +142,7 @@ const dropZone = document.getElementById('dropZone');
           overview.style.display = 'block';
           yourWork.style.display = 'none';
           requests.style.display = 'none';
-          approval.style.display = 'none';
+          // approval.style.display = 'none';
           subfile.style.display = 'none';
           break;
         case 'menu-your-work':
@@ -177,7 +177,7 @@ const dropZone = document.getElementById('dropZone');
           overview.style.display = 'block';
           yourWork.style.display = 'none';
           requests.style.display = 'none';
-          approval.style.display = 'none';
+          //approval.style.display = 'none';
           subfile.style.display = 'none';
           break;
     } 
