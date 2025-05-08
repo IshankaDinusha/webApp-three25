@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubLK</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-accent-dark">
+
+    <div class="container-fluid container-lg container-300 bg-primary-dark">
+
+        <!-- nav-bar -->
+        <div class="row px-2 px-md-4 bg-primary-dark-scroll sticky-top" id="navbar">
+
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand p-0" href="#">
+                        <img src="images/logo-small.png" alt="">
+                    </a>
+
+                    <div
+                        class="d-flex justify-content-end flex-grow-1 flex-lg-grow-0 text-end flex-nowrap align-items-center">
+
+                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none"
+                            onclick="searchModal.show();">
+                            <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                            Search...
+                        </button>
+
+                        <button class="nav-search-btn text-white me-2 d-block d-sm-none" onclick="searchModal.show();">
+                            <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
+                        </button>
+
+                        <a href="sign-up.html"
+                            class="btn btn-primary rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none">
+                            Sign Up
+                        </a>
+
+                        <button
+                            class="btn btn-black rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none"
+                            onclick="logInModal.show();">
+                            Log In
+                        </button>
+
+                        <div class="d-lg-none">
+
+                            <div class="nav-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation" onclick="toggleIcon(this);">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Movies</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a class="nav-link" href="#">TV Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Categories</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a class="nav-link" href="#">Our Subtitle Team</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#moreLinksMenu" role="button"
+                                    aria-expanded="false" aria-controls="moreLinksMenu">
+                                    More Links
+                                    <i class="fa-solid fa-chevron-down ms-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-start justify-content-lg-end flex-grow-1">
+
+                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block"
+                                onclick="searchModal.show();">
+                                <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                                Search...
+                            </button>
+
+                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none"
+                                onclick="searchModal.show();">
+                                <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
+                            </button>
+
+                            <a href="sign-up.html"
+                                class="btn btn-primary rounded-pill text-nowrap me-2 mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
+                                onclick="signUpModal.show();">
+                                Sign Up
+                            </a>
+                            <button
+                                class="btn btn-black rounded-pill text-nowrap mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
+                                onclick="logInModal.show();">
+                                Log In
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- nav-bar -->
+
+        <!-- more-links-menu -->
+        <div class="row collapse px-2 px-md-4" id="moreLinksMenu">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3">
+
+                <div class="row mb-3">
+                    <h6 class="fw-semibold text-warning" style="font-size: small;">Explore More</h6>
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Latest Movies</h6>
+                        <p style="font-size: small;">Discover the newest releases and subtitles.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Popular Picks</h6>
+                        <p style="font-size: small;">Check out trending movies and their subtitles.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Top Rated</h6>
+                        <p style="font-size: small;">See the highest-rated films and subtitles.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">User Requests</h6>
+                        <p style="font-size: small;">Request your favorite subtitles easily here.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3">
+
+                <div class="row mb-3">
+                    <h6 class="fw-semibold text-warning" style="font-size: small;">More Sections</h6>
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Community Forum</h6>
+                        <p style="font-size: small;">Join discussions about movies and subtitles.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Help Center</h6>
+                        <p style="font-size: small;">Find answers to your subtitle questions.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Contact Us</h6>
+                        <p style="font-size: small;">Reach out for support or inquiries.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">About Us</h6>
+                        <p style="font-size: small;">Learn more about our mission and team.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3">
+
+                <div class="row mb-3">
+                    <h6 class="fw-semibold text-warning" style="font-size: small;">Latest Articles</h6>
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Subtitle Tips</h6>
+                        <p style="font-size: small;">Get the best tips for subtitle usage.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Movie Reviews</h6>
+                        <p style="font-size: small;">Read our reviews on the latest films.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">User Feedback</h6>
+                        <p style="font-size: small;">Share your thoughts on subtitles and movies.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-auto">
+
+                        <i class="fa-solid fa-cube"></i>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h6 class="fw-semibold">Upcoming Releases</h6>
+                        <p style="font-size: small;">Stay updated on what's coming soon.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3">
+
+                <div class="row mb-3">
+                    <h6 class="fw-semibold text-warning" style="font-size: small;">Featured Artices</h6>
+                </div>
+
+                <div class="row text-white">
+
+                    <div class="col-12">
+
+                        <img src="images/placeholder-image.jpg" alt="" class="w-100 rounded">
+
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <h6 class="fw-semibold">Subtitle Guide</h6>
+                        <p style="font-size: small;" class="mb-1">Your ultimate guide to using subtitles.</p>
+                        <a href="#" class="link-light" style="font-size: small;">Read more</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- more-links-menu -->
+
+
+        <div class="row px-2 py-4 p-md-4 download-page-backdrop">
+
+            <div class="col-12 mb-3 z-3">
+                <h3 class="text-white">Novocaine (2025) Sinhala Subtitles</h3>
+                <span class="text-warning me-2"><i class="fa-solid fa-star me-2"></i>9.1/10</span>
+                <span class="text-primary-green me-2"><i class="fa-solid fa-clock me-2"></i>2h 15m</span>
+                <span class="text-accent-blue"><i class="fa-solid fa-calendar-days me-2"></i>2025</span>
+            </div>
+
+            <div class="col-12">
+
+                <div class="row mb-3">
+
+                    <div class="col-md-3 col-auto">
+                        <img src="images/posters/novocaine-2025-poster.jpg" alt="" class="w-100 rounded-4 object-fit-cover"
+                            style="height: 350px;">
+                    </div>
+
+                    <div class="col-auto">
+
+                        <div class="row d-flex justify-content-center align-items-center rounded-4"
+                            style="background-image: url(images/banners/novocaine_banner.jpg); background-size: cover; height: 350px; aspect-ratio: 16/9;">
+                            <div class="col-auto">
+                                <button class="btn btn-dark rounded-circle p-0" data-video-id="mRDE5l-PJYY"
+                                    onclick="playTrailer(this);">
+                                    <img src="icons/circle-play-solid.svg" alt="" width="80px">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <button class="btn btn-outline-light rounded-pill me-1">Dark Comedy</button>
+                        <button class="btn btn-outline-light rounded-pill me-1">One Person Army Action</button>
+                        <button class="btn btn-outline-light rounded-pill me-1">Superhero</button>
+                        <button class="btn btn-outline-light rounded-pill me-1">Action</button>
+                        <button class="btn btn-outline-light rounded-pill me-1">Comedy</button>
+                        <button class="btn btn-outline-light rounded-pill">Thriller</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row px-2 py-4 p-md-4">
+
+            <div class="col-12 text-white mb-3">
+                <p>Director&nbsp;&nbsp;&nbsp;<span class="text-accent-blue">Catherine T. Elliott, Craig
+                        Rittenbaum</span></p>
+                <p>Written by&nbsp;&nbsp;&nbsp;<span class="text-accent-blue">Jonathan Groff, Jon Pollack</span></p>
+                <p>Production companies&nbsp;&nbsp;&nbsp;<span class="text-accent-blue">DreamWorks Animation</span></p>
+                <p>Music by&nbsp;&nbsp;&nbsp;<span class="text-accent-blue">Anthony B. Willis</span></p>
+                <span style="text-decoration: underline; cursor: pointer;">See All</span>
+            </div>
+
+            <div class="col-12 text-white">
+                <p>
+                    Nate, played by Jack Quaid, is an assistant bank manager who is unable to experience pain due to a
+                    medical condition. He lives a sheltered life due to his limited life expectancy, but his world
+                    changes when Sherry, played by Amber Midthunder, enters his life and sparks a connection. When
+                    Sherry is kidnapped, Nate's inability to feel pain becomes a crucial asset in his pursuit of the
+                    kidnappers.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
+
+            <h3 class="text-white mb-4">Top Cast</h3>
+
+            <div class="col-12">
+                <div class="row row-cols-3 g-4">
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold">Jack Quaid</span><br>
+                                <span class="fw-light">Nate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-2 py-4 p-md-4">
+
+            <div class="col-12 text-white text-center">
+                <p>Subtitle Contributor:&nbsp;<span class="text-accent-blue">Sahan Perera</span></p>
+                <p>Posted on:&nbsp;<span class="text-accent-blue">2025-05-24</span></p>
+
+                <button class="btn btn-accent-blue rounded-pill fw-semibold">
+                    <i class="fa-solid fa-download me-1"></i>
+                    456 Downloads
+                </button>
+            </div>
+        </div>
+
+
+        <!-- suggestions-and-latest-section -->
+        <div class="row px-2 py-4 p-md-4">
+
+            <h4 class="fw-semibold mb-3 text-white">Suggestions</h4>
+
+            <div class="col-12">
+
+                <div
+                    class="row row-cols-480-2 row-cols-575-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-6 g-3">
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue poster-card">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue poster-card">
+
+                            <img src="images/posters/intersteller.webp" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="zSWdZVtXT7E" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col d-block d-sm-block d-md-none d-lg-block d-xl-block">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col d-block d-sm-block d-md-none d-lg-none d-xl-block">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-12 text-center my-3">
+                <button class="btn btn-warning rounded-pill">
+                    Show More
+                    <i class="fa-solid fa-chevron-down ms-2"></i>
+                </button>
+            </div>
+
+            <h4 class="fw-semibold mb-3 text-white text-end">Latest</h4>
+
+            <div class="col-12">
+                <div
+                    class="row row-cols-480-2 row-cols-575-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-6 g-3">
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue poster-card">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue poster-card">
+
+                            <img src="images/posters/intersteller.webp" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="zSWdZVtXT7E" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col d-block d-sm-block d-md-none d-lg-block d-xl-block">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col d-block d-sm-block d-md-none d-lg-none d-xl-block">
+                        <div class="card border-0 bg-card-dark-blue">
+
+                            <img src="images/posters/prince-of-persia-the-sands-of-time.webp" class="card-img-top"
+                                alt="...">
+
+                            <div class="card-body">
+
+                                <p class="card-title fixed-height-line-limit-2">
+                                    The Last Voyage of Demeter (2023)
+                                </p>
+
+                                <p class="card-text">14 January 2023</p>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <div>
+                                        <i class="fa-solid fa-circle-play fa-fade fa-lg card-play-icon" role="button"
+                                            data-video-id="mRDE5l-PJYY" onmouseover="cardPlayIconHover(this, true);"
+                                            onmouseout="cardPlayIconHover(this, false);" onclick="playTrailer(this);">
+                                        </i>
+                                    </div>
+
+                                    <div>
+                                        <i class="fa-solid fa-star fa-sm"></i><span class="ms-sm-1 me-sm-2">7.5</span>
+                                        <i class="fa-solid fa-clock fa-sm"></i><span class="ms-sm-1">180</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="text-center my-3">
+                <button class="btn btn-warning rounded-pill">
+                    Show More
+                    <i class="fa-solid fa-chevron-down ms-2"></i>
+                </button>
+            </div>
+
+        </div>
+        <!-- suggestions-and-latest-section -->
+
+        <!-- comments-section -->
+        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
+
+            <div class="col-12 text-white mb-3">
+
+                <h3 class="mb-4">Comments</h3>
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold text-primary-dark-blue">Sashin Deemantha</span><br>
+                                <span class="fw-light" style="font-size: small;">2025-05-25</span>
+                            </div>
+                        </div>
+                        <p class="mt-1">some lines in subtitle is missing, can you guys update them.</p>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex align-items-center">
+                            <img src="images/actors/jack-quaid-actor.jpg" alt="" style="aspect-ratio: 1; width: 70px;"
+                                class="rounded-circle">
+                            <div class="text-white ms-3">
+                                <span class="fw-semibold text-primary-dark-blue">Ishanka Dinusha</span><br>
+                                <span class="fw-light" style="font-size: small;">2025-05-25</span>
+                            </div>
+                        </div>
+                        <p class="mt-1">there is no missing lines, above guy is crazy or something, Lol</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- comments-section -->
+
+        <div class="row px-2 py-4 p-md-4">
+
+            <div class="col-12 text-white">
+
+                <h5 class="mb-3">Leave a comment</h5>
+
+                <div class="row leave-a-comment">
+
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+
+                    <div class="col-6">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <textarea class="form-control" rows="3" placeholder="comment"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <p><small>*leaving a comment will get you signed up, check your email after</small></p>
+                        <button class="btn btn-primary rounded-pill">Post my comment</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+        <div class="row px-2 py-4 p-md-4 justify-content-center bg-secondary-dark">
+
+            <div class="col-12 col-sm-8 col-lg-6 col-xl-5">
+
+                <div class="row p-4">
+                    <img src="images/logo-large.png" alt="" class="w-100">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
+
+            <div class="col-12">
+
+                <div class="row row-cols-auto g-2 justify-content-center">
+
+                    <div class="col">
+                        <a href="#" class="link-light link-underline-opacity-0 me-2">Home Page</a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="link-light link-underline-opacity-0 me-2">About Us</a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="link-light link-underline-opacity-0 me-2">Contact Us</a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="link-light link-underline-opacity-0 me-2">Help Center</a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="link-light link-underline-opacity-0">Feedback Form</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
+
+            <div class="col-12">
+                <hr class="text-white">
+            </div>
+
+            <div
+                class="col-12 d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-between">
+
+                <div>
+                    <p class="text-white"><small>&copy; 2025 Sub LK. All rights reserved.</small></p>
+                </div>
+
+                <div class="text-center">
+                    <small>
+                        <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Privacy Policy</a>
+                        <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Terms of Service</a>
+                        <a href="#" class="text-nowrap link-light link-underline-opacity-0">Cookies Settings</a>
+                    </small>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- footer -->
+
+    </div>
+
+    <!-- Youtube Trailer Modal -->
+    <div class="modal fade" id="trailerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="trailerModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" aria-label="Close"
+                            onclick="hideTrailerModal();"></i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body p-0" style="aspect-ratio: 16/9;">
+
+                    <div id="ytPlayer"></div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <a href="#" class="link-accent-blue">Download Subtitles<i
+                            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Youtube Trailer Modal -->
+
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <i class="fa-solid fa-triangle-exclamation fa-fade text-accent-blue display-5 mb-3"></i>
+                    <h5>Something went wrong.</h5>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-accent-blue rounded-pill">Report</button>
+                    <button type="button" class="btn btn-outline-light rounded-pill"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Error Modal -->
+
+    <!-- Login Modal -->
+    <div class="modal fade log-in-modal" id="logInModal" tabindex="-1" aria-labelledby="logInModal" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h3 class="mb-4 text-center mt-4 text-accent-blue fw-semibold">Log In to SubLK</h3>
+                    <p class="text-center">Enter your account details to login.</p>
+
+                    <div class="mb-3 px-4">
+                        <label for="inputLoginEmail" class="form-label text-accent-blue">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            Email
+                        </label>
+                        <input type="email" class="form-control rounded-pill" id="inputLoginEmail"
+                            placeholder="Enter your email address">
+                    </div>
+
+                    <div class="mb-3 px-4">
+                        <label for="inputLoginPassword" class="form-label text-accent-blue">
+                            <i class="fa-solid fa-key me-2"></i>
+                            Password
+                        </label>
+                        <input type="password" class="form-control rounded-pill" id="inputLoginPassword"
+                            placeholder="Enter your password">
+                    </div>
+
+
+                    <div class="d-flex justify-content-between mb-3 px-4">
+                        <div class="form-check">
+                            <input class="form-check-input p-0" type="checkbox" value="" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <p class="mb-3 link-accent-blue">Forgot password?</p>
+                    </div>
+
+                    <div class="text-center px-4">
+                        <button class="btn btn-accent-blue rounded-pill fw-semibold">
+                            Confirm
+                            <i class="fa-solid fa-check ms-2"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+
+                    <p class="mb-3 text-white">Don't have an account? <a href="sign-up.html"
+                            class="link-accent-blue">Sign Up</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+
+    <!-- Search Modal -->
+    <div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModal"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header d-flex justify-content-between">
+
+                    <img src="images/logo-small-text.png" alt="">
+
+                    <div>
+                        <i class="fa-solid fa-circle-xmark fa-xl btn-modal-close" role="button" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </i>
+                    </div>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h3 class="mb-4 text-center mt-4 text-accent-blue fw-semibold">SubLK Search</h3>
+                    <p class="text-center">Enter a movie or tv show name to search.</p>
+
+                    <div class="mb-3 px-4">
+                        <input type="email" class="form-control rounded-pill" id="inputLoginEmail"
+                            placeholder="Search Subtitles...">
+                    </div>
+
+                </div>
+
+                <div class="modal-footer justify-content-center">
+
+                    <p class="mb-3 text-white">Can't find a subtitle? <span class="link-accent-blue">Request Now!</span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal -->
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

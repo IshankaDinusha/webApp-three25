@@ -346,6 +346,10 @@
     color: var(--accent-blue);
 }
 
+.text-primary-dark-blue {
+    color: var(--primary-dark-blue);
+}
+
 .text-secondary-dark {
     color: var(--secondary-dark);
 }
@@ -706,6 +710,29 @@
 .da-slide-show {
     opacity: 1;
     transform: translateX(0);
+}
+
+
+.leave-a-comment {
+
+    input, textarea {
+
+        background-color: var(--primary-dark-blue);
+        color: var(--primary-white) !important;
+        border-color: var(--accent-dark);
+    }
+
+    input:focus, textarea:focus {
+        background-color: var(--primary-dark-blue);
+        border-color: var(--accent-blue);
+
+    }
+
+    input::placeholder, textarea::placeholder {
+
+        color: var(--primary-white);
+        opacity: 0.5;
+    }
 }
 
 @media (max-width: 1199px) {
