@@ -1,7 +1,8 @@
 const actorDB = ['Tom Hanks', 'Emma Stone', 'Robert Downey Jr.'];
 let selectedActor = null;
 
-function searchActor() {
+function searchActor(event) {
+  if (event) event.preventDefault(); // Just in case
   const input = document.getElementById('actorSearch').value.trim();
   const result = document.getElementById('actorResult');
   const addForm = document.getElementById('addActorForm');
@@ -9,7 +10,7 @@ function searchActor() {
   if (actorDB.includes(input)) {
     selectedActor = input;
     result.innerHTML = `<p class="text-white custom-btn-font">✅ Actor found: <strong>${input}</strong></p>`;
-    addForm.classList.add('d-none');
+    addForm.classList.remove('d-none');
   } else {
     result.innerHTML = `<p class="text-white custom-btn-font">❌ Actor not found: <strong>${input}</strong></p>`;
     document.getElementById('newActorName').value = input;
@@ -52,21 +53,3 @@ function submitForm(event) {
   console.log('📤 Submitted Data:', data);
   alert('Subtitle info submitted successfully! (Check console for data)');
 }
-
-function handleStickyNavbar() {
-  const navbar = document.getElementById("navbar");
-  const mbNavbar = document.getElementById("mbNavbar");
-  if (window.innerWidth < 768) { // Change 768px to your preferred breakpoint
-    navbar.classList.remove("sticky-top");
-    mbNavbar.classList.add("sticky-top");
-  } else {
-    navbar.classList.add("sticky-top");
-    mbNavbar.classList.remove("sticky-top");
-  }
-}
-
-// Run on initial load
-handleStickyNavbar();
-
-// Run on window resize
-window.addEventListener("resize", handleStickyNavbar);
