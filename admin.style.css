@@ -545,6 +545,25 @@ input[type="file"].custom-file-style {
   input[type="file"].custom-file-style::file-selector-button:hover {
     background-color: #e0e0e0;
   }
+/* Drop Zone CSS */
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    background-color: #487B99;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .drop-zone.dragover {
+    background-color: #487B99;
+  }
+  .drop-zone input[type="file"] {
+    display: none;
+  }
+  .upload-icon {
+    font-size: 3rem;
+  }
 
 
 
