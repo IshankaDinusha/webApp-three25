@@ -458,6 +458,18 @@ body nav div button i {
 
 }
 
+/* Custom yellow button styles */
+.custom-yellow-btn {
+    color: black;
+    background-color: #E0C422;
+    border: none;
+    font-size: 1rem;
+}
+
+.custom-yellow-btn:hover {
+    background-color: #AD9718;
+}
+
 /* Default order on small screens (swapped) */
 .first {
     order: 1;
@@ -709,6 +721,9 @@ input[type="file"].custom-file-style {
     }
 
     .custom-btn-font {
+        font-size: 0.86rem;
+    }
+    .custom-yellow-btn {
         font-size: 0.86rem;
     }
 
