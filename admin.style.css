@@ -458,6 +458,34 @@ body nav div button i {
 
 }
 
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  border-radius: 0 0 10px 10px;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+
 /* Custom yellow button styles */
 .custom-yellow-btn {
     color: black;

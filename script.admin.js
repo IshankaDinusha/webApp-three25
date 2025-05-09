@@ -196,3 +196,39 @@ document.querySelectorAll('.offcanvas-menu-item').forEach(item => {
     showMenuItemById(idToShow);
   });
 });*/
+
+const actorSuggestions = [
+  "Tom Hanks",
+  "Emma Watson",
+  "Leonardo DiCaprio",
+  "Morgan Freeman",
+  "Scarlett Johansson",
+  "Will Smith",
+  "Jennifer Lawrence",
+  "Chris Evans"
+];
+
+const actorSearchInput = document.getElementById("actorSearch");
+const suggestionsList = document.getElementById("suggestionsList");
+
+actorSearchInput.addEventListener("input", () => {
+  const input = actorSearchInput.value.toLowerCase();
+  suggestionsList.innerHTML = "";
+
+  if (input) {
+    const filtered = actorSuggestions.filter(actor =>
+      actor.toLowerCase().includes(input)
+    );
+
+    filtered.forEach(actor => {
+      const li = document.createElement("li");
+      li.textContent = actor;
+      li.addEventListener("click", () => {
+        actorSearchInput.value = actor;
+        suggestionsList.innerHTML = "";
+      });
+      suggestionsList.appendChild(li);
+    });
+  }
+});
+

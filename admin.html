@@ -750,7 +750,8 @@
                     </div>
 
                 </div>
-
+                
+                <!--Subtitle add-->
                 <div id="subfile" class="w-100 my-4">
                     <div class="container p-0 d-flex flex-column align-items-end gap-4">
                         <h2 class="text-white fs-5 m-0">Contribute your finest work</h2>
@@ -806,17 +807,22 @@
                             </div>
                             <div class="section d-flex flex-column gap-3">
                                 <label for="actorSearch" class="text-white custom-btn-font">Search Actor</label>
-                                <div class="d-flex align-items-center gap-2">
-                                    <input type="text" id="actorSearch"
-                                        class="rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus"
-                                        style="background-color: #487B99; color: rgba(0, 0, 0, 1);"
-                                        placeholder="Enter actor name..." autocomplete="off" />
+                                <div class="autocomplete-container d-flex align-items-center gap-2 position-relative" style="width: 100%; max-width: 500px;">
+                                <div style="flex-grow: 1; position: relative;">
+                                        <input type="text" id="actorSearch"
+                                            class="rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus w-100"
+                                            style="background-color: #487B99; color: rgba(0, 0, 0, 1);"
+                                            placeholder="Enter actor name..." autocomplete="off" />
+
+                                        <ul id="suggestionsList" class="suggestions"></ul>
+                                    </div>
 
                                     <button type="button" onclick="searchActor()"
                                         class="btn btn-primary rounded-pill px-4 py-3">
                                         Search
                                     </button>
                                 </div>
+
 
 
                                 <div id="actorResult"></div>
