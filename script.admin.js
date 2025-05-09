@@ -58,11 +58,12 @@ function handleStickyNavbar() {
   const navbar = document.getElementById("navbar");
   const mbNavbar = document.getElementById("mbNavbar");
   if (window.innerWidth < 768) { // Change 768px to your preferred breakpoint
-    navbar.classList.remove("sticky-top");
-    mbNavbar.classList.add("sticky-top");
+    mbNavbarRight.classList.remove("d-flex");
+    mbNavbarRight.classList.add("d-none");
+    //mbNavbar.classList.add("sticky-top");
   } else {
-    navbar.classList.add("sticky-top");
-    mbNavbar.classList.remove("sticky-top");
+    mbNavbarRight.classList.add("d-flex");
+    //mbNavbar.classList.remove("sticky-top");
   }
 }
 

@@ -19,7 +19,7 @@
         <!-- nav-bar -->
         <div id="navbar" class="bg-primary-dark-scroll sticky-top">
             <nav
-                class="navbar navbar-expand-xl w-100 d-flex justify-content-between align-items-center custom-nav-padding">
+                class="navbar m-0 navbar-expand-xl w-100 d-flex justify-content-between align-items-center custom-nav-padding">
                 <!-- Left section -->
                 <div id="mbNavbar" class="d-flex align-items-center gap-3">
                     <!-- Button with icon triggers offcanvas -->
@@ -35,7 +35,7 @@
                 </div>
 
                 <!-- Right section -->
-                <div class="d-flex align-items-center">
+                <div id="mbNavbarRight" class="d-flex align-items-center">
                     <p class="first mb-0 text-white">Hi there Deemantha!</p>
                     <a class="second navbar-brand p-0" href="#">
                         <img src="images/interstellar-55425f10ca52c.jpg"
@@ -46,6 +46,17 @@
             </nav>
         </div>
         <!-- nav-bar -->
+         <div class="row w-100 d-flex justify-content-center align-items-center">
+            <div id="navRight" class="d-flex justify-content-center align-items-center d-xl-none">
+                    <p class="first mb-0 text-white">Hi there Kavindya!</p>
+                    <a class="second navbar-brand me-3 p-0" href="#">
+                        <img src="images/interstellar-55425f10ca52c.jpg"
+                            class="rounded-circle border border-3 border-white" alt=""
+                            style="max-width: 3.45rem; height:3.45rem; object-fit: cover;">
+                    </a>
+            </div>
+         </div>
+         
 
         <!-- Offcanvas component -->
         <div class="offcanvas offcanvas-start bg-offcanvas-blue" data-bs-scroll="true" tabindex="-1"
@@ -83,7 +94,7 @@
 
             <!--Overview-->
             <div id="overview" class="w-100 px-4 my-4">
-                <div id="overviewComponents" class="d-flex flex-column align-items-start">
+                <div id="overviewComponents" class="d-flex flex-column align-items-end">
                     <h2 class="text-white fs-5 mb-3">Overview</h2>
 
                     <!-- Flex container -->
@@ -161,7 +172,7 @@
             <!--YourWork-->
             <div id="yourWork" class="w-100 px-4 my-4">
 
-                <div class="container p-0 d-flex flex-column align-items-start">
+                <div class="container p-0 d-flex flex-column align-items-end">
 
                     <h2 class="text-white fs-5 mb-3">Your Work</h2>
                     <!-- Flex container -->
@@ -443,7 +454,7 @@
             <!-- requests -->
             <div class="w-100 px-4 my-4">
 
-                <div id="requests" class="container p-0 d-flex flex-column align-items-start gap-4">
+                <div id="requests" class="container p-0 d-flex flex-column align-items-end gap-4">
 
                     <h5 class="text-white m-0">Requests</h5>
 

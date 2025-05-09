@@ -613,35 +613,49 @@ input[type="file"].custom-file-style {
         transform: translatey(-5rem);
     }
     100% {       
-        transform: translatey(0); /* adjust based on your content */
-        
+        transform: translatey(0); /* adjust based on your content */        
     }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+    }
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    }
 
-@keyframes blink {
-  0%, 50%, 100% {
-    border-color: transparent;
-  }
-  25%, 75% {
-    border-color: black;
-  }
-}
+    @keyframes blink {
+    0%, 50%, 100% {
+        border-color: transparent;
+    }
+    25%, 75% {
+        border-color: black;
+    }
+    }
+    #navRight{
+        transform: translatey(-5rem);
+        margin-top: 1rem;
+        justify-content: center;
+        background-image: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        border-radius: 3rem;
+        padding: 0.65rem 1rem 0.65rem 1rem;
+        width: fit-content;
+        gap: 0rem;
+        animation-name: expand;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;        
+        animation-timing-function: ease-in-out;
+    }
 
 
     body nav div:last-of-type {
