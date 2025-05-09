@@ -614,6 +614,7 @@ input[type="file"].custom-file-style {
     }
     100% {       
         transform: translatey(0); /* adjust based on your content */
+        
     }
 }
 @keyframes fadeIn {
@@ -622,6 +623,23 @@ input[type="file"].custom-file-style {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    border-color: transparent;
+  }
+  25%, 75% {
+    border-color: black;
   }
 }
 
@@ -641,9 +659,6 @@ input[type="file"].custom-file-style {
         animation-iteration-count: 1;
         animation-fill-mode: forwards;        
         animation-timing-function: ease-in-out;
-    }
-    body nav div:last-of-type:hover {
-        animation-play-state: running;
     }
     body nav div:last-of-type p{
         opacity: 0;
