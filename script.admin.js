@@ -59,7 +59,6 @@ function handleStickyNavbar() {
   const mbNavbarRight = document.getElementById("mbNavbarRight");
   const navRight = document.getElementById("navRight");
   if (window.innerWidth < 768) { // Change 768px to your preferred breakpoint
-    mbNavbarRight.classList.remove("d-flex");
     mbNavbarRight.classList.add("d-none");
     //navRight.classList.remove("d-none");
     navRight.classList.add("d-flex");
@@ -75,19 +74,6 @@ function handleStickyNavbar() {
 
 // Run on initial load
 handleStickyNavbar();
-
-// Wait 2 seconds, then run the function every 1 second, 3 times
-setTimeout(() => {
-    let count = 0;
-    const maxRuns = 3;
-    const intervalId = setInterval(() => {
-        handleStickyNavbar();
-        count++;
-        if (count >= maxRuns) {
-            clearInterval(intervalId); // Stop after 3 runs
-        }
-    }, 1000); // Run every 1 second
-}, 1000); // Initial delay of 2 seconds
 
 // Run on window resize
 window.addEventListener("resize", handleStickyNavbar);
