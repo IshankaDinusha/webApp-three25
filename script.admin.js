@@ -79,114 +79,114 @@ window.addEventListener("resize", handleStickyNavbar);
 
 //dropzone
 const dropZone = document.getElementById('dropZone');
-    const fileInput = document.getElementById('fileInput');
-    const browseBtn = document.getElementById('browseBtn');
+const fileInput = document.getElementById('fileInput');
+const browseBtn = document.getElementById('browseBtn');
 
-    browseBtn.addEventListener('click', () => fileInput.click());
+browseBtn.addEventListener('click', () => fileInput.click());
 
-    fileInput.addEventListener('change', (e) => {
-      handleFiles(e.target.files);
-    });
+fileInput.addEventListener('change', (e) => {
+  handleFiles(e.target.files);
+});
 
-    dropZone.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      dropZone.classList.add('dragover');
-    });
+dropZone.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  dropZone.classList.add('dragover');
+});
 
-    dropZone.addEventListener('dragleave', () => {
-      dropZone.classList.remove('dragover');
-    });
+dropZone.addEventListener('dragleave', () => {
+  dropZone.classList.remove('dragover');
+});
 
-    dropZone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      dropZone.classList.remove('dragover');
-      handleFiles(e.dataTransfer.files);
-    });
+dropZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  dropZone.classList.remove('dragover');
+  handleFiles(e.dataTransfer.files);
+});
 
-    function handleFiles(files) {
-      const file = files[0];
-      if (!file) return;
+function handleFiles(files) {
+  const file = files[0];
+  if (!file) return;
 
-      if (!file.name.endsWith(".png") && !file.name.endsWith(".jpg") && !file.name.endsWith(".jpeg")) {
-        alert("Only .png .jpg .jpegfiles are allowed.");
-        return;
-      }
-
-      if (file.size > 2 * 1024 * 1024) {
-        alert("File size must be under 2MB.");
-        return;
-      }
-
-      alert(`File "${file.name}" is ready to be uploaded.`);
-      // Upload logic can be added here.
-    }
-  
-    //offcanvas js
-
-    // Initialize the offcanvas menu to show "Overview" by default
-    document.addEventListener('DOMContentLoaded', () => {
-      showMenuItemById('menu-overview');
-    });
-    
-   function showMenuItemById(idToShow) {
-      const overview = document.getElementById("overview");
-      const yourWork = document.getElementById("yourWork");
-      const requests = document.getElementById("requests");
-      const approval = document.getElementById("subApproval");
-      const subfile = document.getElementById("subfile");
-      
-      console.log(`Showing ${idToShow}`);
-
-      switch (idToShow) {
-        case 'menu-overview':
-          overview.style.display = 'block';
-          yourWork.style.display = 'none';
-          requests.style.display = 'none';
-          // approval.style.display = 'none';
-          subfile.style.display = 'none';
-          break;
-        case 'menu-your-work':
-          overview.style.display = 'none';
-          yourWork.style.display = 'block';
-          requests.style.display = 'none';
-          approval.style.display = 'none';
-          subfile.style.display = 'none';
-          break;
-        case 'menu-requests':
-          overview.style.display = 'none';
-          yourWork.style.display = 'none';
-          requests.style.display = 'block';
-          approval.style.display = 'none';
-          subfile.style.display = 'none';
-          break;
-        case 'menu-approval':
-          overview.style.display = 'none';
-          yourWork.style.display = 'none';
-          requests.style.display = 'none';
-          approval.style.display = 'block';
-          subfile.style.display = 'none';
-          break;
-        case 'menu-new-subtitle':
-          overview.style.display = 'none';
-          yourWork.style.display = 'none';
-          requests.style.display = 'none';
-          approval.style.display = 'none';
-          subfile.style.display = 'block';
-          break;
-        default:
-          overview.style.display = 'block';
-          yourWork.style.display = 'none';
-          requests.style.display = 'none';
-          //approval.style.display = 'none';
-          subfile.style.display = 'none';
-          break;
-    } 
+  if (!file.name.endsWith(".png") && !file.name.endsWith(".jpg") && !file.name.endsWith(".jpeg")) {
+    alert("Only .png .jpg .jpegfiles are allowed.");
+    return;
   }
-  
-    /*// Add event listeners to the menu items
-    document.querySelectorAll('.offcanvas-menu-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const idToShow = item.getAttribute('data-target');
-        showMenuItemById(idToShow);
-      });
-    });*/
+
+  if (file.size > 2 * 1024 * 1024) {
+    alert("File size must be under 2MB.");
+    return;
+  }
+
+  alert(`File "${file.name}" is ready to be uploaded.`);
+  // Upload logic can be added here.
+}
+
+//offcanvas js
+
+// Initialize the offcanvas menu to show "Overview" by default
+document.addEventListener('DOMContentLoaded', () => {
+  showMenuItemById('menu-overview');
+});
+
+function showMenuItemById(idToShow) {
+  const overview = document.getElementById("overview");
+  const yourWork = document.getElementById("yourWork");
+  const requests = document.getElementById("requests");
+  const approval = document.getElementById("subApproval");
+  const subfile = document.getElementById("subfile");
+
+  console.log(`Showing ${idToShow}`);
+
+  switch (idToShow) {
+    case 'menu-overview':
+      overview.classList.remove("d-none");
+      yourWork.classList.add("d-none");
+      requests.classList.add("d-none");
+      approval.classList.add("d-none");
+      subfile.classList.add("d-none");
+      break;
+    case 'menu-your-work':
+      overview.classList.add("d-none");
+      yourWork.classList.remove("d-none");
+      requests.classList.add("d-none");
+      approval.classList.add("d-none");
+      subfile.classList.add("d-none");
+      break;
+    case 'menu-requests':
+      overview.classList.add("d-none");
+      yourWork.classList.add("d-none");
+      requests.classList.remove("d-none");
+      approval.classList.add("d-none");
+      subfile.classList.add("d-none");
+      break;
+    case 'menu-approval':
+      overview.classList.add("d-none");
+      yourWork.classList.add("d-none");
+      requests.classList.add("d-none");
+      approval.classList.remove("d-none");
+      subfile.classList.add("d-none");
+      break;
+    case 'menu-new-subtitle':
+      overview.classList.add("d-none");
+      yourWork.classList.add("d-none");
+      requests.classList.add("d-none");
+      approval.classList.add("d-none");
+      subfile.classList.remove("d-none");
+      break;
+    default:
+      overview.classList.remove("d-none");
+      yourWork.classList.add("d-none");
+      requests.classList.add("d-none");
+      approval.classList.add("d-none");
+      subfile.classList.add("d-none");
+      break;
+  }
+}
+
+/*// Add event listeners to the menu items
+document.querySelectorAll('.offcanvas-menu-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const idToShow = item.getAttribute('data-target');
+    showMenuItemById(idToShow);
+  });
+});*/
