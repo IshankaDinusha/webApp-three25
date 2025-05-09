@@ -608,16 +608,58 @@ input[type="file"].custom-file-style {
     body nav div button i {
         font-size: 2rem;
     }
+   @keyframes expand {
+    0% {
+        transform: translatey(-5rem);
+    }
+    100% {       
+        transform: translatey(0); /* adjust based on your content */
+    }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
     body nav div:last-of-type {
         display: flex;
+        transform: translatey(-5rem);
         margin-top: 1rem;
         justify-content: center;
         background-image: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
         border-radius: 3rem;
         padding: 0.65rem 1rem 0.65rem 1rem;
-        width: fit-content;
         gap: 0rem;
+        width: fit-content;
+        animation-name: expand;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;        
+        animation-timing-function: ease-in-out;
+    }
+    body nav div:last-of-type:hover {
+        animation-play-state: running;
+    }
+    body nav div:last-of-type p{
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;        
+        animation-timing-function: ease-in-out;
+    }
+    body nav div:last-of-type a img{
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;        
+        animation-timing-function: ease-in-out;
     }
 
     body nav div:last-of-type p {
