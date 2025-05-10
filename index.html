@@ -15,115 +15,112 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-accent-dark">
+<body class="bg-primary-dark">
 
-    <div class="container-fluid container-lg container-300 bg-primary-dark">
+    <header class="bg-primary-dark-scroll sticky-top" id="navbar">
 
         <!-- nav-bar -->
-        <div class="row px-2 px-md-4 bg-primary-dark-scroll sticky-top" id="navbar">
+        <nav class="navbar navbar-expand-lg">
 
-            <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid container-lg container-300">
 
-                <div class="container-fluid">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="images/subzonecoloured.png" style="width: 7.5rem;" alt="subzonelogo">
+                </a>
 
-                    <a class="navbar-brand p-0" href="#">
-                        <img src="images/subzonecoloured.png" style="width: 7.5rem;" alt="subzonelogo">
+                <div
+                    class="d-flex justify-content-end flex-grow-1 flex-lg-grow-0 text-end flex-nowrap align-items-center">
+
+                    <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none"
+                        onclick="searchModal.show();">
+                        <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                        Search...
+                    </button>
+
+                    <button class="nav-search-btn text-white me-2 d-block d-sm-none" onclick="searchModal.show();">
+                        <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
+                    </button>
+
+                    <a href="sign-up.html"
+                        class="btn btn-primary rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none">
+                        Sign Up
                     </a>
 
-                    <div
-                        class="d-flex justify-content-end flex-grow-1 flex-lg-grow-0 text-end flex-nowrap align-items-center">
+                    <button class="btn btn-black rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none"
+                        onclick="logInModal.show();">
+                        Log In
+                    </button>
 
-                        <button class="nav-search-bar rounded-pill me-2 d-none d-sm-block d-lg-none"
+                    <div class="d-lg-none">
+
+                        <div class="nav-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                            onclick="toggleIcon(this);">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link" href="#">TV Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link" href="#">Our Subtitle Team</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#moreLinksMenu" role="button"
+                                aria-expanded="false" aria-controls="moreLinksMenu">
+                                More Links
+                                <i class="fa-solid fa-chevron-down ms-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-start justify-content-lg-end flex-grow-1">
+
+                        <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block"
                             onclick="searchModal.show();">
                             <i class="fa-solid fa-magnifying-glass mx-1"></i>
                             Search...
                         </button>
 
-                        <button class="nav-search-btn text-white me-2 d-block d-sm-none" onclick="searchModal.show();">
+                        <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none"
+                            onclick="searchModal.show();">
                             <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
                         </button>
 
                         <a href="sign-up.html"
-                            class="btn btn-primary rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none">
+                            class="btn btn-primary rounded-pill text-nowrap me-2 mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
+                            onclick="signUpModal.show();">
                             Sign Up
                         </a>
-
-                        <button
-                            class="btn btn-black rounded-pill text-nowrap me-2 d-none d-sm-block d-md-block d-lg-none"
+                        <button class="btn btn-black rounded-pill text-nowrap mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
                             onclick="logInModal.show();">
                             Log In
                         </button>
-
-                        <div class="d-lg-none">
-
-                            <div class="nav-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false"
-                                aria-label="Toggle navigation" onclick="toggleIcon(this);">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Movies</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a class="nav-link" href="#">TV Series</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Categories</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a class="nav-link" href="#">Our Subtitle Team</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#moreLinksMenu" role="button"
-                                    aria-expanded="false" aria-controls="moreLinksMenu">
-                                    More Links
-                                    <i class="fa-solid fa-chevron-down ms-2"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <div class="d-flex justify-content-start justify-content-lg-end flex-grow-1">
-
-                            <button class="nav-search-bar rounded-pill text-nowrap mx-2 d-none d-xl-block"
-                                onclick="searchModal.show();">
-                                <i class="fa-solid fa-magnifying-glass mx-1"></i>
-                                Search...
-                            </button>
-
-                            <button class="nav-search-btn text-white me-2 d-none d-lg-block d-xl-none"
-                                onclick="searchModal.show();">
-                                <i class="fa-solid fa-magnifying-glass fa-xl mx-1"></i>
-                            </button>
-
-                            <a href="sign-up.html"
-                                class="btn btn-primary rounded-pill text-nowrap me-2 mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
-                                onclick="signUpModal.show();">
-                                Sign Up
-                            </a>
-                            <button
-                                class="btn btn-black rounded-pill text-nowrap mb-3 mb-sm-0 d-block d-sm-none d-lg-block"
-                                onclick="logInModal.show();">
-                                Log In
-                            </button>
-                        </div>
                     </div>
                 </div>
-            </nav>
-
-        </div>
+            </div>
+        </nav>
         <!-- nav-bar -->
+    </header>
+
+    <div class="container-fluid container-lg container-300">
 
         <!-- more-links-menu -->
         <div class="row collapse px-2 px-md-4" id="moreLinksMenu">
@@ -383,6 +380,7 @@
         </div>
         <!-- more-links-menu -->
 
+        <!-- Slider -->
         <div class="row my-5">
 
             <!-- Slider main container -->
@@ -410,7 +408,8 @@
                         <!-- <p class="silde-text">Superman 2025</p> -->
                     </div>
 
-                    <div class="swiper-slide" style="background-image: url(images/slides/a-minecraft-movie-2025-slide.jpg);">
+                    <div class="swiper-slide"
+                        style="background-image: url(images/slides/a-minecraft-movie-2025-slide.jpg);">
 
                         <a href="">
                             <div class="slide-overlay"></div>
@@ -419,7 +418,8 @@
                         <!-- <p class="silde-text">Superman 2025</p> -->
                     </div>
 
-                    <div class="swiper-slide" style="background-image: url(images/slides/my-fault-london-2025-slide.jpg);">
+                    <div class="swiper-slide"
+                        style="background-image: url(images/slides/my-fault-london-2025-slide.jpg);">
 
                         <a href="">
                             <div class="slide-overlay"></div>
@@ -454,6 +454,7 @@
             <!-- Slider main container -->
 
         </div>
+        <!-- Slider -->
 
         <!-- movies-section -->
         <div class="row bg-secondary-dark px-2 py-4 p-md-4">
@@ -1476,79 +1477,89 @@
         </div>
         <!-- how-banner -->
 
-        <!-- footer -->
-        <div class="row px-2 py-5 p-md-4 justify-content-center bg-secondary-dark">
-
-            <div class="col-12 col-sm-8 col-lg-6 col-xl-5">
-
-                <div class="row p-4 mt-5">
-                    <img src="images/subzonecoloured.png" alt="" class="w-100">
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
-
-            <div class="col-12">
-
-                <div class="row row-cols-auto g-2 justify-content-center">
-
-                    <div class="col">
-                        <a href="#" class="link-light link-underline-opacity-0 me-2">Home Page</a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="link-light link-underline-opacity-0 me-2">About Us</a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="link-light link-underline-opacity-0 me-2">Contact Us</a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="link-light link-underline-opacity-0 me-2">Help Center</a>
-                    </div>
-
-                    <div class="col">
-                        <a href="#" class="link-light link-underline-opacity-0">Feedback Form</a>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row px-2 py-4 p-md-4 bg-secondary-dark">
-
-            <div class="col-12">
-                <hr class="text-white">
-            </div>
-
-            <div
-                class="col-12 d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-between">
-
-                <div>
-                    <p class="text-white"><small>&copy; 2025 Sub LK. All rights reserved.</small></p>
-                </div>
-
-                <div class="text-center">
-                    <small>
-                        <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Privacy Policy</a>
-                        <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Terms of Service</a>
-                        <a href="#" class="text-nowrap link-light link-underline-opacity-0">Cookies Settings</a>
-                    </small>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- footer -->
-
     </div>
+
+
+    <footer class="bg-secondary-dark">
+
+        <div class="container-fluid container-lg container-300">
+
+            <!-- footer -->
+            <div class="row px-2 py-5 p-md-4 justify-content-center">
+
+                <div class="col-12 col-sm-8 col-lg-6 col-xl-5">
+
+                    <div class="row p-4 mt-5">
+                        <img src="images/subzonecoloured.png" alt="" class="w-100">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row px-2 py-4 p-md-4">
+
+                <div class="col-12">
+
+                    <div class="row row-cols-auto g-2 justify-content-center">
+
+                        <div class="col">
+                            <a href="#" class="link-light link-underline-opacity-0 me-2">Home Page</a>
+                        </div>
+
+                        <div class="col">
+                            <a href="#" class="link-light link-underline-opacity-0 me-2">About Us</a>
+                        </div>
+
+                        <div class="col">
+                            <a href="#" class="link-light link-underline-opacity-0 me-2">Contact Us</a>
+                        </div>
+
+                        <div class="col">
+                            <a href="#" class="link-light link-underline-opacity-0 me-2">Help Center</a>
+                        </div>
+
+                        <div class="col">
+                            <a href="#" class="link-light link-underline-opacity-0">Feedback Form</a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row px-2 py-4 p-md-4">
+
+                <div class="col-12">
+                    <hr class="text-white">
+                </div>
+
+                <div
+                    class="col-12 d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-sm-between">
+
+                    <div>
+                        <p class="text-white"><small>&copy; 2025 Sub LK. All rights reserved.</small></p>
+                    </div>
+
+                    <div class="text-center">
+                        <small>
+                            <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Privacy Policy</a>
+                            <a href="#" class="me-2 text-nowrap link-light link-underline-opacity-0">Terms of
+                                Service</a>
+                            <a href="#" class="text-nowrap link-light link-underline-opacity-0">Cookies Settings</a>
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- footer -->
+
+        </div>
+    
+    </footer>
 
     <!-- Youtube Trailer Modal -->
     <div class="modal fade" id="trailerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
