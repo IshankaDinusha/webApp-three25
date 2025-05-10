@@ -138,6 +138,9 @@
     color: var(--primary-white);
     opacity: 0.8;
 }
+.bg-accent-blue{
+    background-color: var(--accent-blue);
+}
 
 .btn-accent-blue {
     border-color: var(--accent-blue);
@@ -465,7 +468,7 @@ body nav div button i {
   right: 0;
   max-height: 200px;
   overflow-y: auto;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-top: none;
   background-color: #fff;
   list-style: none;
@@ -473,6 +476,7 @@ body nav div button i {
   padding: 0;
   z-index: 1000;
   border-radius: 0 0 10px 10px;
+  background-color: var(--accent-blue);
 }
 
 .suggestions li {
@@ -482,7 +486,7 @@ body nav div button i {
 }
 
 .suggestions li:hover {
-  background-color: #f0f0f0;
+  background-color: #1D6FA4;
 }
 
 
