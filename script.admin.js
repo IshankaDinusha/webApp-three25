@@ -1,4 +1,42 @@
-const actorDB = ['Tom Hanks', 'Emma Stone', 'Robert Downey Jr.'];
+const actorDB = [
+  "Tom Hanks",
+  "Emma Watson",
+  "Leonardo DiCaprio",
+  "Morgan Freeman",
+  "Scarlett Johansson",
+  "Will Smith",
+  "Jennifer Lawrence",
+  "Chris Evans"
+];
+
+// Actor search input and suggestions
+
+
+const actorSearchSecInput = document.getElementById("actorSearchSec");
+const actorSearchInput = document.getElementById("actorSearch");
+const suggestionsList = document.getElementById("suggestionsList");
+
+actorSearchInput.addEventListener("input", () => {
+  const input = actorSearchInput.value.toLowerCase();
+  suggestionsList.innerHTML = "";
+
+  if (input) {
+    const filtered = actorDB.filter(actor =>
+      actor.toLowerCase().includes(input)
+    );
+
+    filtered.forEach(actor => {
+      const li = document.createElement("li");
+      li.textContent = actor;
+      li.addEventListener("click", () => {
+        actorSearchInput.value = actor;
+        suggestionsList.innerHTML = "";
+      });
+      suggestionsList.appendChild(li);
+    });
+  }
+});
+
 let selectedActor = null;
 
 function searchActor(event) {
@@ -9,10 +47,16 @@ function searchActor(event) {
 
   if (actorDB.includes(input)) {
     selectedActor = input;
-    result.innerHTML = `<p class="text-white custom-btn-font">✅ Actor found: <strong>${input}</strong></p>`;
-    addForm.classList.remove('d-none');
+    result.innerHTML = `<p class="custom-btn-font" style="color: #32C82D;">Actor found, <strong>${input}</strong></p>`;
+    if (addForm.classList.contains('d-none')) {
+      console.log('Element is hidden');
+    }else{
+      addForm.classList.add('d-none');
+    }
+
+    //addForm.classList.remove('d-none');
   } else {
-    result.innerHTML = `<p class="text-white custom-btn-font">❌ Actor not found: <strong>${input}</strong></p>`;
+    result.innerHTML = `<p class="custom-btn-font" style="color: #E82C2C;">Actor not found, <strong>${input}</strong></p>`;
     document.getElementById('newActorName').value = input;
     addForm.classList.remove('d-none');
     selectedActor = null;
@@ -29,7 +73,7 @@ function addNewActor() {
     document.getElementById('actorResult').innerHTML = `<p class="text-white custom-btn-font">✅ New actor added: <strong>${name}</strong></p>`;
     document.getElementById('addActorForm').classList.add('hidden');
   } else {
-    alert('Please provide both actor name and image URL.');
+    alert('Please provide both actor name and image.');
   }
 }
 
@@ -53,6 +97,8 @@ function submitForm(event) {
   console.log('📤 Submitted Data:', data);
   alert('Subtitle info submitted successfully! (Check console for data)');
 }
+
+//mobile profile nav card
 
 function handleStickyNavbar() {
   const navbar = document.getElementById("navbar");
@@ -196,39 +242,4 @@ document.querySelectorAll('.offcanvas-menu-item').forEach(item => {
     showMenuItemById(idToShow);
   });
 });*/
-
-const actorSuggestions = [
-  "Tom Hanks",
-  "Emma Watson",
-  "Leonardo DiCaprio",
-  "Morgan Freeman",
-  "Scarlett Johansson",
-  "Will Smith",
-  "Jennifer Lawrence",
-  "Chris Evans"
-];
-
-const actorSearchInput = document.getElementById("actorSearch");
-const suggestionsList = document.getElementById("suggestionsList");
-
-actorSearchInput.addEventListener("input", () => {
-  const input = actorSearchInput.value.toLowerCase();
-  suggestionsList.innerHTML = "";
-
-  if (input) {
-    const filtered = actorSuggestions.filter(actor =>
-      actor.toLowerCase().includes(input)
-    );
-
-    filtered.forEach(actor => {
-      const li = document.createElement("li");
-      li.textContent = actor;
-      li.addEventListener("click", () => {
-        actorSearchInput.value = actor;
-        suggestionsList.innerHTML = "";
-      });
-      suggestionsList.appendChild(li);
-    });
-  }
-});
 
