@@ -745,6 +745,29 @@
   width: 100%;
 }
 
+#movieShowCaseSec {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#movieShowCaseSec::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('images/banners/novocaine_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  transform: scale(1.1); /* prevents edge clipping after blur */
+  z-index: -1;
+  /* Add a dark overlay with opacity */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+  background-blend-mode: darken;
+}
+
+
 @media (max-width: 1199px) {
 
     .sign-up {
