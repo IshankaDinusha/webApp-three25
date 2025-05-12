@@ -263,3 +263,5 @@ function changeSignUpView(isLogin) {
 
     }
 }
+
+//downpage poster adn video
