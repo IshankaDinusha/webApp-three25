@@ -702,7 +702,7 @@ input[type="file"].custom-file-style {
     }
 
 
-    body nav div:last-of-type {
+    /*body nav div:last-of-type {
         display: flex;
         transform: translatey(-5rem);
         margin-top: 1rem;
@@ -737,7 +737,7 @@ input[type="file"].custom-file-style {
 
     body nav div:last-of-type p {
         color: var(--primary-dark);
-    }
+    }*/
 
     #overviewComponets {
         display: flex;

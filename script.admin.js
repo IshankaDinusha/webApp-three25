@@ -98,37 +98,6 @@ function submitForm(event) {
   alert('Subtitle info submitted successfully! (Check console for data)');
 }
 
-//mobile profile nav card
-
-function handleStickyNavbar() {
-  const navbar = document.getElementById("navbar");
-  const mbNavbarRight = document.getElementById("mbNavbarRight");
-  const navRight = document.getElementById("navRight");
-  if (window.innerWidth < 768) { // Change 768px to your preferred breakpoint
-    mbNavbarRight.classList.add("d-none");
-    //navRight.classList.remove("d-none");
-    navRight.classList.add("d-flex");
-
-    //mbNavbar.classList.add("sticky-top");
-  } else {
-    mbNavbarRight.classList.add("d-flex");
-    navRight.classList.add("d-none");
-
-    //mbNavbar.classList.remove("sticky-top");
-  }
-}
-
-// Run on initial load
-handleStickyNavbar();
-
-// Run on window resize
-window.addEventListener("resize", handleStickyNavbar);
-
-
-
-
-
-
 //dropzone
 const dropZone = document.getElementById('dropZone');
 const fileInput = document.getElementById('fileInput');

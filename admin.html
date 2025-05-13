@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubLK Admin</title>
+    <title>SubZone Admin</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -45,7 +45,8 @@
                 </div>
             </nav>
         </div>
-        <!-- nav-bar -->
+        <!--mb-nav-bar -->
+         
          <div class="row w-100 justify-content-center align-items-center">
             <div id="navRight" class="justify-content-center align-items-center d-xl-none">
                     <p class="first mb-0 text-white">Hi there Kavindya!</p>
@@ -943,7 +944,34 @@
     </div>
     <!-- Error Modal -->
 
+    <script>
+        //mobile profile nav card
 
+        function handleStickyNavbar() {
+        const navbar = document.getElementById("navbar");
+        const mbNavbarRight = document.getElementById("mbNavbarRight");
+        const navRight = document.getElementById("navRight");
+        if (window.innerWidth < 768) { // Change 768px to your preferred breakpoint
+            mbNavbarRight.classList.add("d-none");
+            //navRight.classList.remove("d-none");
+            navRight.classList.add("d-flex");
+
+            //mbNavbar.classList.add("sticky-top");
+        } else {
+            mbNavbarRight.classList.add("d-flex");
+            navRight.classList.add("d-none");
+
+            //mbNavbar.classList.remove("sticky-top");
+        }
+        }
+
+        // Run on initial load
+        handleStickyNavbar();
+
+        // Run on window resize
+        window.addEventListener("resize", handleStickyNavbar);
+
+    </script>
     <script src="bootstrap.bundle.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
