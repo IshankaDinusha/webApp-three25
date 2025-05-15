@@ -9,12 +9,16 @@ const actorDB = [
   "Chris Evans"
 ];
 
+let inputActors = [];
+
 // Actor search input and suggestions
 
 
 const actorSearchSecInput = document.getElementById("actorSearchSec");
 const actorSearchInput = document.getElementById("actorSearch");
 const suggestionsList = document.getElementById("suggestionsList");
+const addedActors = document.getElementById("addedActors");
+
 
 actorSearchInput.addEventListener("input", () => {
   const input = actorSearchInput.value.toLowerCase();
@@ -40,6 +44,7 @@ actorSearchInput.addEventListener("input", () => {
 let selectedActor = null;
 
 function searchActor(event) {
+  suggestionsList.innerHTML = "";
   if (event) event.preventDefault(); // Just in case
   const input = document.getElementById('actorSearch').value.trim();
   const result = document.getElementById('actorResult');
@@ -47,6 +52,8 @@ function searchActor(event) {
 
   if (actorDB.includes(input)) {
     selectedActor = input;
+    inputActors.push(input);
+    addedActors.innerHTML = `<p class="text-white">Added actors, <strong>${inputActors}</strong></p>`;
     result.innerHTML = `<p class="custom-btn-font" style="color: #32C82D;">Actor found, <strong>${input}</strong></p>`;
     if (addForm.classList.contains('d-none')) {
       console.log('Element is hidden');
@@ -69,6 +76,8 @@ function addNewActor() {
 
   if (name && image) {
     actorDB.push(name);
+    inputActors.push(input);
+    addedActors.innerHTML = `<p class="text-white">Added actors, <strong>${inputActors}</strong></p>`;
     selectedActor = name;
     document.getElementById('actorResult').innerHTML = `<p class="text-white custom-btn-font">✅ New actor added: <strong>${name}</strong></p>`;
     document.getElementById('addActorForm').classList.add('hidden');
