@@ -812,10 +812,10 @@
                                 <label for="actorSearch" class="text-white custom-btn-font">Search Actor</label>
                                 <div class="autocomplete-container d-flex flex-column justify-content-center gap-2" style="width: 100%;">
                                 <div class="d-flex w-100" style="flex-grow: 1; position: relative; align-items: center;">
-                                    <div id="actorSearchSec" style="flex-grow: 1; position: relative;">
+                                    <div id="actorSearchSec" style="flex-grow: 1; position: relative;" class="m-0 p-0">
                                         <input type="text" id="actorSearch"
-                                            class="rounded-pill py-3 px-4 border-0 placeholder-44 reset-on-focus"
-                                            style="background-color: #4491be; color: rgba(0, 0, 0, 1);"
+                                            class="py-3 px-4 m-0 border-0 placeholder-44 reset-on-focus"
+                                            style="background-color: #4491be; color: rgba(0, 0, 0, 1); border-top-right-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 50rem; border-bottom-left-radius: 50rem;"
                                             placeholder="Enter actor name..." autocomplete="off" />
 
                                         <ul id="suggestionsList" class="suggestions"></ul>
@@ -824,11 +824,13 @@
                                     
 
                                     <button type="button" onclick="searchActor()"
-                                        class="btn btn-primary rounded-pill ms-2 px-4 py-3">
-                                        Search
+                                        class="btn btn-primary px-4 py-3 m-0 border-0"
+                                        style="border-top-right-radius: 50rem; border-bottom-right-radius: 50rem; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                                        <i class="fa-solid fa-magnifying-glass-plus fa-xl" style="color: #ffffff;"></i>
                                     </button>
                                 </div>
                                 <div id="actorResult"></div>
+                                <div id="addedActors"></div>
 
                                 <div id="addActorForm" class="d-none d-flex flex-column gap-3">
                                     <h4 class="text-white custom-btn-font">Actor not found. Add new actor</h4>
@@ -838,20 +840,19 @@
                                         style="background-color: #4491be; color: rgba(0, 0, 0, 1);" />
 
 
-                                    <div class="d-flex flex-column gap-3">
-                                        <label for="newActorImage" class="text-white custom-btn-font">Actor Image
-                                            URL</label>
+                                    <div class="d-flex flex-column gap-3 w-100">
+                                        <label for="newActorImage" class="text-white custom-btn-font">Actor Image</label>
                                         <div class="drop-zone w-100" id="dropZone">
                                             <div class="upload-icon mb-3"><i class="fa-solid fa-upload fa-lg"
                                                     style="color: #074b73;"></i></div>
-                                            <p class="mb-1 fw-semibold">Choose a file or drag & drop it here</p>
-                                            <p class="text-white-50">SRT file only, max size 2MB</p>
+                                            <p class="mb-1 fw-semibold text-black">Choose a file or drag & drop it here</p>
+                                            <p class="text-50" style="color: #074b73;">SRT file only, max size 2MB</p>
                                             <input type="file" id="fileInput" accept=".png,.jpg,.jpeg">
-                                            <button type="button" class="btn btn-outline-light mt-3"
-                                                id="browseBtn">Browse File</button>
+                                            <button type="button" class="btn btn-outline-dark mt-3"
+                                                id="browseBtn" style="color: #074b73;">Browse File</button>
                                         </div>
 
-                                        <button onclick="addNewActor()" class="btn btn-primary rounded-pill px-4 py-3">
+                                        <button onclick="addNewActor()" class="w-auto btn btn-primary rounded-pill px-4 py-3">
                                             Add actor
                                         </button>
                                     </div>
