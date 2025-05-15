@@ -15,6 +15,12 @@
 
 }
 
+/*nav bar*/
+nav div{
+    padding: 0.1175rem 0;
+}
+
+
 .btn {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1354,6 +1360,10 @@
     }
 }
 @media only screen and (max-width: 600px) {
+    /*nav bar*/
+    nav div{
+        padding: 0.22rem 0;
+    }
     #movieShowCase{
         gap: 1rem;
     }
