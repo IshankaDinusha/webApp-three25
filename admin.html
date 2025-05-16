@@ -856,14 +856,49 @@
                                             Add actor
                                         </button>
                                     </div>
-
+                                </div>
+                                <div class="d-flex flex-column gap-3">
+                                    <label for="newActorImage" class="text-white custom-btn-font">Subtitle file zip</label>
+                                    <div class="drop-zone w-100" id="dropZone">
+                                        <div class="upload-icon mb-3"><i class="fa-solid fa-upload fa-lg"
+                                                style="color: #074b73;"></i></div>
+                                        <p class="mb-1 fw-semibold text-black">Choose a file or drag & drop it here</p>
+                                        <p class="text-50" style="color: #074b73;">ZIP file only, max size 2MB</p>
+                                        <input type="file" id="fileInput" accept=".zip">
+                                        <button type="button" class="btn btn-outline-dark mt-3"
+                                            id="browseBtn" style="color: #074b73;">Browse File</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3">
+                                    <label for="newActorImage" class="text-white custom-btn-font">Movie Poster</label>
+                                    <div class="drop-zone w-100" id="dropZone">
+                                        <div class="upload-icon mb-3"><i class="fa-solid fa-upload fa-lg"
+                                                style="color: #074b73;"></i></div>
+                                        <p class="mb-1 fw-semibold text-black">Choose a file or drag & drop it here</p>
+                                        <p class="text-50" style="color: #074b73;">PNG, JPG, JPEG files only, max size 2MB</p>
+                                        <input type="file" id="fileInput" accept=".png,.jpg,.jpeg">
+                                        <button type="button" class="btn btn-outline-dark mt-3"
+                                            id="browseBtn" style="color: #074b73;">Browse File</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3">
+                                    <label for="newActorImage" class="text-white custom-btn-font">Movie Banner</label>
+                                    <div class="drop-zone w-100" id="dropZone">
+                                        <div class="upload-icon mb-3"><i class="fa-solid fa-upload fa-lg"
+                                                style="color: #074b73;"></i></div>
+                                        <p class="mb-1 fw-semibold text-black">Choose a file or drag & drop it here</p>
+                                        <p class="text-50" style="color: #074b73;">PNG, JPG, JPEG files only, max size 2MB</p>
+                                        <input type="file" id="fileInput" accept=".png,.jpg,.jpeg">
+                                        <button type="button" class="btn btn-outline-dark mt-3"
+                                            id="browseBtn" style="color: #074b73;">Browse File</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
-                                <button class="rounded-pill border-0 w-50 px-4 py-3"
-                                    style="background-color: #E82C2C;">Cancel <i class="fa-solid fa-xmark ms-1"
-                                        style="color: #000000;"></i></button>
-                                <button class="border-0 rounded-pill px-4 py-3 custom-yellow-btn w-50">Confirm</button>
+                                <button
+                                class="rounded-pill border-0 w-50 px-4 py-3 btn-third">
+                                Cancel <i class="fa-solid fa-xmark ms-1" style="color: #ffff;"></i></button>
+                                <button class="btn-secondary border-0 rounded-pill px-4 py-3 w-50">Confirm</button>
                             </div>
                         </form>
                     </div>
