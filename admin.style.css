@@ -19,6 +19,9 @@
     --dark-req-background: #1A2234;
 
 }
+.bg-secondary-blue{
+    background-color: var(--secondary-blue);
+}
 
 .bg-dark-req-background {
     background-color: var(--dark-req-background);
@@ -124,6 +127,30 @@
     border-color: var(--primary-blue);
     background-color: var(--primary-blue);
     color: var(--primary-white);
+}
+
+.btn-secondary{
+    border-color: var(--primary-blue);
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    font-size: 1rem;
+}
+.btn-secondary:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: var(--primary-white);
+    opacity: 0.8;
+}
+.btn-third {
+    border-color: var(--offcanvas-selection-blue);
+    background-color: var(--offcanvas-selection-blue);
+    color: var(--primary-white);
+}
+.btn-third:hover {
+    background-color: var(--offcanvas-selection-blue);
+    border-color: var(--offcanvas-selection-blue);
+    color: var(--primary-white);
+    opacity: 0.8;
 }
 
 .btn-accent-dark {
